@@ -9,6 +9,7 @@ int PeleC::state_nghost = 0;
 bool PeleC::do_reflux = true;
 bool PeleC::do_avg_down = true;
 std::string PeleC::init_pltfile;
+int PeleC::init_pltfile_domain_expansion = 0;
 amrex::Real PeleC::init_pltfile_massfrac_tol = 1e-8;
 int PeleC::init_pltfile_coarse_levels = 0;
 bool PeleC::dump_old = false;

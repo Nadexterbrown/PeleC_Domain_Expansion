@@ -729,7 +729,14 @@ PeleC::initData()
       });
     amrex::Gpu::synchronize();
   } else {
-    initLevelDataFromPlt(level, init_pltfile, S_new);
+    amrex::Print() << "Domain Expansion Check: " << init_pltfile_domain_expansion << std::endl;
+    if (init_pltfile_domain_expansion > 1) {
+      amrex::Print() << "Domain Expansion Check" << std::endl;
+      initExpandLevelDataFromPlt(level, init_pltfile, S_new, init_pltfile_domain_expansion);
+    } else {
+      amrex::Print() << "Regular Plot File Processing" << std::endl;
+      initLevelDataFromPlt(level, init_pltfile, S_new);
+    }
   }
 
   enforce_consistent_e(S_new);

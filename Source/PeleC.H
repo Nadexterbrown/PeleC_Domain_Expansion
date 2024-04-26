@@ -123,6 +123,10 @@ public:
   void initExpandLevelDataFromPlt(
     const int lev, const std::string& pltFile, amrex::MultiFab& S_new, const int expansionCoef);
 
+  // Initialize Interpolated level due to domain expansion
+  void initSuperImpositionLevelDataFromPlt(
+    const int lev, const std::string& pltFile, amrex::MultiFab& S_new);
+
   // Define data descriptors.
   static void variableSetUp();
 

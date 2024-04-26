@@ -31,6 +31,7 @@ using namespace MASA;
 #include "Utilities.H"
 #include "Tagging.H"
 #include "IndexDefines.H"
+#include "PltFileManager.H"
 
 #ifdef PELE_ENABLE_FPE_TRAP
 #if defined(__linux__)
@@ -458,6 +459,16 @@ PeleC::PeleC(
 
   const amrex::MultiFab& S_new = get_new_data(State_Type);
 
+  std::vector<amrex::Box> sim_boxes;
+  for (amrex::MFIter mfi_sim(S_new); mfi_sim.isValid(); ++mfi_sim) {
+    sim_boxes.push_back(mfi_sim.validbox());
+  }
+
+  // Step 2: Comparison & Categorization
+  for (const amrex::Box& sim_box : sim_boxes) {
+    amrex::Print() << "Simulation Box: " << sim_box << std::endl;
+  }
+
   for (int src : src_list) {
     int oldGrow = numGrow();
     int newGrow = S_new.nGrow();
@@ -693,7 +704,17 @@ PeleC::initData()
   amrex::MultiFab& S_new = get_new_data(State_Type);
 
   S_new.setVal(0.0);
+  /*
+  std::vector<amrex::Box> sim_boxes;
+  for (amrex::MFIter mfi_sim(S_new); mfi_sim.isValid(); ++mfi_sim) {
+    sim_boxes.push_back(mfi_sim.validbox());
+  }
 
+  // Step 2: Comparison & Categorization
+  for (const amrex::Box& sim_box : sim_boxes) {
+    amrex::Print() << "Simulation Box: " << sim_box << std::endl;
+  }
+  */
 #if AMREX_SPACEDIM > 1
   // make sure dx = dy = dz -- that's all we guarantee to support
   const amrex::GpuArray<amrex::Real, AMREX_SPACEDIM> dx = geom.CellSizeArray();
@@ -729,10 +750,27 @@ PeleC::initData()
       });
     amrex::Gpu::synchronize();
   } else {
-    amrex::Print() << "Domain Expansion Check: " << init_pltfile_domain_expansion << std::endl;
-    if (init_pltfile_domain_expansion > 1) {
-      amrex::Print() << "Domain Expansion Check" << std::endl;
-      initExpandLevelDataFromPlt(level, init_pltfile, S_new, init_pltfile_domain_expansion);
+    if (init_pltfile_superimposition == 1){
+      // Superimposing the pltData onto the current simulation domain requires the domain to be created prior to
+      // loading the pltFile
+
+      // State data pertaining to the mass fractions is stored as a species "flux" (rho * Y_i), meaning we need to
+      // appropriately correct for this using the pc_initrestartdata function which stores the mass fraction data as
+      // stored in the pltFile
+      // Currently higher level importing is experiencing difficulties due to box mismatch
+      amrex::Print() << "Domain Superimposition Beginning Level " << level << " Processing" << std::endl;
+      const auto geomdata = geom.data();
+      const ProbParmDevice* lprobparm = d_prob_parm_device;
+      auto sarrs = S_new.arrays();
+      amrex::ParallelFor(
+        S_new, [=] AMREX_GPU_DEVICE(int nbx, int i, int j, int k) noexcept {
+          pc_initrestartdata(i, j, k, sarrs[nbx], geomdata, *lprobparm);
+          // Verify that the sum of (rho Y)_i = rho at every cell
+          // pc_check_initial_species(i, j, k, sarrs[nbx]);
+        });
+      amrex::Gpu::synchronize();
+
+      initSuperImpositionLevelDataFromPlt(level, init_pltfile, S_new);
     } else {
       amrex::Print() << "Regular Plot File Processing" << std::endl;
       initLevelDataFromPlt(level, init_pltfile, S_new);

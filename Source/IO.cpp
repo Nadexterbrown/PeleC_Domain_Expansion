@@ -952,9 +952,11 @@ PeleC::initExpandLevelDataFromPlt(const int lev, const std::string& dataPltFile,
       for (int n = 0; n < NUM_SPECIES; n++) {
         // if the species is not too far out of bounds, clip it
         const auto mf = sarr(i, j, k, UFS + n);
+        /*
         amrex::Print()
           << "i,j,k: " << i << " " << j << " " << k
           << " , Massfrac: " << mf << std::endl;
+        */
         if ((mf < 0.0) || (1.0 < mf)) {
           if (((-tol < mf) && (mf < 0.0)) || ((1.0 < mf) && (mf < 1 + tol))) {
             sarr(i, j, k, UFS + n) =
@@ -975,9 +977,135 @@ PeleC::initExpandLevelDataFromPlt(const int lev, const std::string& dataPltFile,
 
         sumY += sarr(i, j, k, UFS + n);
         // Checkpoint Print
+        /*
         if (lev > 0) {
           amrex::Print() << "i,j,k: " << i << " " << j << " "  << k << " , SUM: "  << sumY << std::endl;
         }
+        */
+      }
+
+      // If the sumY isn't too far from 1, renormalize
+      if (std::abs(1.0 - sumY) < tol) {
+        for (int n = 0; n < NUM_SPECIES; n++) {
+          sarr(i, j, k, UFS + n) /= sumY;
+        }
+      } else {
+#ifdef AMREX_USE_GPU
+        AMREX_DEVICE_PRINTF(
+          "Species mass fraction don't sum to 1. The sum is: %g", sumY);
+        amrex::Abort();
+#else
+        amrex::Abort(
+          "Species mass fraction don't sum to 1. The sum is: " +
+          std::to_string(sumY));
+#endif
+      }
+    });
+  amrex::Gpu::synchronize();
+
+  // Convert to conserved variables
+  amrex::ParallelFor(
+    S_new, [=] AMREX_GPU_DEVICE(int nbx, int i, int j, int k) noexcept {
+      auto sarr = sarrs[nbx];
+      const amrex::Real rho = sarr(i, j, k, URHO);
+      const amrex::Real temp = sarr(i, j, k, UTEMP);
+      amrex::Real massfrac[NUM_SPECIES] = {0.0};
+      for (int n = 0; n < NUM_SPECIES; n++) {
+        massfrac[n] = sarr(i, j, k, UFS + n);
+        sarr(i, j, k, UFS + n) *= rho;
+      }
+      AMREX_D_TERM(sarr(i, j, k, UMX) *= rho;, sarr(i, j, k, UMY) *= rho;
+                   , sarr(i, j, k, UMZ) *= rho;)
+
+      auto eos = pele::physics::PhysicsType::eos();
+      amrex::Real eint = 0.0;
+      eos.RTY2E(rho, temp, massfrac, eint);
+
+      sarr(i, j, k, UEINT) = rho * eint;
+      sarr(i, j, k, UEDEN) =
+        rho * eint + 0.5 *
+                       (AMREX_D_TERM(
+                         sarr(i, j, k, UMX) * sarr(i, j, k, UMX),
+                         +sarr(i, j, k, UMY) * sarr(i, j, k, UMY),
+                         +sarr(i, j, k, UMZ) * sarr(i, j, k, UMZ))) /
+                       rho;
+    });
+  amrex::Gpu::synchronize();
+}
+
+void
+PeleC::initSuperImpositionLevelDataFromPlt(const int lev, const std::string& dataPltFile, amrex::MultiFab& S_new)
+{
+  amrex::Print() << "Using data (rho, u, T, Y) from pltfile " << dataPltFile
+                 << std::endl;
+  pele::physics::pltfilemanager::PltFileManager pltData(dataPltFile);
+  const auto plt_vars = pltData.getVariableList();
+  // Read rho, u, temperature (required)
+  std::map<std::string, int> vars{
+    {"density", -1}, {"x_velocity", -1}, {"Temp", -1}};
+  for (auto& var : vars) {
+    var.second = find_position(plt_vars, var.first);
+    if (var.second == -1) {
+      amrex::Abort("Unable to find variable in plot file: " + var.first);
+    }
+  }
+  // PeleC loads variables in the following manner: rho, u, temperature, ...
+  amrex::Print() << "Density" << std::endl;
+  pltData.imposeDataPatchFromPlt(lev, geom, vars["density"], URHO, 1, S_new);
+  amrex::Print() << "X Velocity" << std::endl;
+  pltData.imposeDataPatchFromPlt(lev, geom, vars["x_velocity"], UMX, AMREX_SPACEDIM, S_new);
+  amrex::Print() << "Temperature" << std::endl;
+  pltData.imposeDataPatchFromPlt(lev, geom, vars["Temp"], UTEMP, 1, S_new);
+
+  const int numXCells = geom.Domain().size()[0];
+  const int numYCells = geom.Domain().size()[1];
+
+  amrex::Print() << "Current Simulation Domain:  " << geom.Domain() << std::endl;
+  amrex::Print() << "Current Simulation X Domain:  " << numXCells << std::endl;
+  amrex::Print() << "Current Simulation Y Domain:  " << numYCells << std::endl;
+
+  // Copy species from the plot file
+  for (int n = 0; n < spec_names.size(); n++) {
+    const auto& spec = spec_names.at(n);
+    const int pos = find_position(plt_vars, "Y(" + spec + ")");
+    amrex::Print() << "Processing Y(" << spec << ") " << UFS + n << std::endl;
+    if (pos != -1) {
+      pltData.imposeDataPatchFromPlt(lev, geom, pos, UFS + n, 1, S_new);
+    }
+  }
+
+  // Sanity check the species, clean them up if they aren't too bad
+  auto sarrs = S_new.arrays();
+  const auto tol = init_pltfile_massfrac_tol;
+  amrex::ParallelFor(
+    S_new, [=] AMREX_GPU_DEVICE(int nbx, int i, int j, int k) noexcept {
+      auto sarr = sarrs[nbx];
+      amrex::Real sumY = 0.0;
+
+      for (int n = 0; n < NUM_SPECIES; n++) {
+        // if the species is not too far out of bounds, clip it
+        const auto mf = sarr(i, j, k, UFS + n);
+        if ((mf < 0.0) || (1.0 < mf)) {
+          if (((-tol < mf) && (mf < 0.0)) || ((1.0 < mf) && (mf < 1 + tol))) {
+            sarr(i, j, k, UFS + n) =
+              amrex::min<amrex::Real>(1.0, amrex::max<amrex::Real>(0.0, mf));
+          } else {
+#ifdef AMREX_USE_GPU
+            AMREX_DEVICE_PRINTF(
+              "Species mass fraction is out of bounds (spec, value): (%d, %g)",
+              n, mf);
+            amrex::Abort();
+#else
+            amrex::Abort(
+              "Species mass fraction is out of bounds (spec, value): ( " +
+              std::to_string(n) + ", " + std::to_string(mf) + ")");
+#endif
+          }
+        }
+
+        sumY += sarr(i, j, k, UFS + n);
+        // Checkpoint Print
+        // amrex::Print() << "i,j,k: " << i << " " << j << " "  << k << " , SUM: "  << sumY << std::endl;
       }
 
       // If the sumY isn't too far from 1, renormalize

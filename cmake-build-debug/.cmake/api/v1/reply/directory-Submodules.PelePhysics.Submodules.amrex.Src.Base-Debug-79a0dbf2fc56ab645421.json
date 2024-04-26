@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "Submodules/PelePhysics/Submodules/amrex/Src/Base",
+		"source" : "Submodules/PelePhysics/Submodules/amrex/Src/Base"
+	}
+}

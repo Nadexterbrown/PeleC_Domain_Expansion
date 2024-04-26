@@ -54,6 +54,21 @@ pc_initdata(
   }
 }
 
+// -------------------------- Restarted Domain Initilization -------------------------- //
+AMREX_GPU_DEVICE
+        AMREX_FORCE_INLINE
+void
+pc_initrestartdata(
+        int i,
+        int j,
+        int k,
+        amrex::Array4<amrex::Real> const& state,
+        amrex::GeometryData const& geomdata,
+        ProbParmDevice const& prob_parm)
+{
+
+}
+
 AMREX_GPU_DEVICE
 AMREX_FORCE_INLINE
 void

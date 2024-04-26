@@ -1,0 +1,112 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"sundials_add_library"
+		],
+		"files" : 
+		[
+			"Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/spgmr/CMakeLists.txt",
+			"Submodules/PelePhysics/Submodules/sundials/cmake/macros/SundialsAddLibrary.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 353,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 353,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 364,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/spgmr/libsundials_sunlinsolspgmr.a"
+			],
+			"targetId" : "sundials_sunlinsolspgmr_static::@c21d7bc95c1f66719caa",
+			"targetIndex" : 104,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/spgmr/libsundials_sunlinsolspgmr.4.6.2.dylib"
+			],
+			"targetId" : "sundials_sunlinsolspgmr_shared::@c21d7bc95c1f66719caa",
+			"targetIndex" : 103,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/spgmr/libsundials_sunlinsolspgmr.dylib"
+			],
+			"targetId" : "sundials_sunlinsolspgmr_shared::@c21d7bc95c1f66719caa",
+			"targetIndex" : 103,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "include/sunlinsol",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/include/sunlinsol/sunlinsol_spgmr.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/spgmr",
+		"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/spgmr"
+	}
+}

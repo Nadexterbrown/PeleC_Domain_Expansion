@@ -1,0 +1,112 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"sundials_add_library"
+		],
+		"files" : 
+		[
+			"Submodules/PelePhysics/Submodules/sundials/src/sunnonlinsol/newton/CMakeLists.txt",
+			"Submodules/PelePhysics/Submodules/sundials/cmake/macros/SundialsAddLibrary.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 353,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 353,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 364,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/src/sunnonlinsol/newton/libsundials_sunnonlinsolnewton.a"
+			],
+			"targetId" : "sundials_sunnonlinsolnewton_static::@c6457e989a8aa20d612a",
+			"targetIndex" : 130,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/src/sunnonlinsol/newton/libsundials_sunnonlinsolnewton.3.6.2.dylib"
+			],
+			"targetId" : "sundials_sunnonlinsolnewton_shared::@c6457e989a8aa20d612a",
+			"targetIndex" : 129,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/src/sunnonlinsol/newton/libsundials_sunnonlinsolnewton.dylib"
+			],
+			"targetId" : "sundials_sunnonlinsolnewton_shared::@c6457e989a8aa20d612a",
+			"targetIndex" : 129,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "include/sunnonlinsol",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/include/sunnonlinsol/sunnonlinsol_newton.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunnonlinsol/newton",
+		"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunnonlinsol/newton"
+	}
+}

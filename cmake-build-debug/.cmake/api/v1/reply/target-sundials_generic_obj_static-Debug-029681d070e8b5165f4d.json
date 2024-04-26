@@ -1,0 +1,270 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/./sundials_band.c.o"
+		},
+		{
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/./sundials_context.c.o"
+		},
+		{
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/./sundials_dense.c.o"
+		},
+		{
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/./sundials_direct.c.o"
+		},
+		{
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/./sundials_iterative.c.o"
+		},
+		{
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/./sundials_linearsolver.c.o"
+		},
+		{
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/./sundials_logger.c.o"
+		},
+		{
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/./sundials_math.c.o"
+		},
+		{
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/./sundials_matrix.c.o"
+		},
+		{
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/./sundials_memory.c.o"
+		},
+		{
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/./sundials_nonlinearsolver.c.o"
+		},
+		{
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/./sundials_nvector.c.o"
+		},
+		{
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/./sundials_nvector_senswrapper.c.o"
+		},
+		{
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/./sundials_version.c.o"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"sundials_add_library",
+			"target_compile_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"Submodules/PelePhysics/Submodules/sundials/cmake/macros/SundialsAddLibrary.cmake",
+			"Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 153,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 191,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 178,
+				"parent" : 1
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fPIC -fcolor-diagnostics"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "SUNDIALS_STATIC_DEFINE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/sundials/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/sundials/src/sundials"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "99"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
+		}
+	],
+	"id" : "sundials_generic_obj_static::@e268509f36a99912da80",
+	"name" : "sundials_generic_obj_static",
+	"paths" : 
+	{
+		"build" : "Submodules/PelePhysics/Submodules/sundials/src/sundials",
+		"source" : "Submodules/PelePhysics/Submodules/sundials/src/sundials"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/sundials_band.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/sundials_context.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/sundials_dense.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/sundials_direct.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/sundials_iterative.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/sundials_linearsolver.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/sundials_logger.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/sundials_math.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/sundials_matrix.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/sundials_memory.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/sundials_nonlinearsolver.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/sundials_nvector.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/sundials_nvector_senswrapper.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/sundials/sundials_version.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

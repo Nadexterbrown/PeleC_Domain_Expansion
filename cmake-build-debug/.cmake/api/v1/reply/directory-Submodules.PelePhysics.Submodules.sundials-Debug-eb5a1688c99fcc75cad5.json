@@ -1,0 +1,264 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"Submodules/PelePhysics/Submodules/sundials/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 213,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 218,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 239,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 242,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 255,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 268,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/sundials",
+			"paths" : 
+			[
+				"cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/include/sundials/sundials_export.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/sundials",
+			"paths" : 
+			[
+				"cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/include/sundials/sundials_config.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/sundials",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/LICENSE"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "include/sundials",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/NOTICE"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/sundials",
+			"exportName" : "sundials-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "sundials_generic_static::@e268509f36a99912da80",
+					"index" : 72
+				},
+				{
+					"id" : "sundials_generic_shared::@e268509f36a99912da80",
+					"index" : 71
+				},
+				{
+					"id" : "sundials_nvecserial_static::@a4577ab9a49e72278069",
+					"index" : 80
+				},
+				{
+					"id" : "sundials_nvecserial_shared::@a4577ab9a49e72278069",
+					"index" : 79
+				},
+				{
+					"id" : "sundials_nvecmanyvector_static::@5faa6b9a93d67b4b5218",
+					"index" : 76
+				},
+				{
+					"id" : "sundials_nvecmanyvector_shared::@5faa6b9a93d67b4b5218",
+					"index" : 75
+				},
+				{
+					"id" : "sundials_sunmatrixband_static::@b504149cce3665afca6e",
+					"index" : 112
+				},
+				{
+					"id" : "sundials_sunmatrixband_shared::@b504149cce3665afca6e",
+					"index" : 111
+				},
+				{
+					"id" : "sundials_sunmatrixdense_static::@a85b1b091132cefa44aa",
+					"index" : 116
+				},
+				{
+					"id" : "sundials_sunmatrixdense_shared::@a85b1b091132cefa44aa",
+					"index" : 115
+				},
+				{
+					"id" : "sundials_sunmatrixsparse_static::@b725effa464d6f3489d2",
+					"index" : 120
+				},
+				{
+					"id" : "sundials_sunmatrixsparse_shared::@b725effa464d6f3489d2",
+					"index" : 119
+				},
+				{
+					"id" : "sundials_sunlinsolband_static::@49844e196713a6fe9742",
+					"index" : 84
+				},
+				{
+					"id" : "sundials_sunlinsolband_shared::@49844e196713a6fe9742",
+					"index" : 83
+				},
+				{
+					"id" : "sundials_sunlinsoldense_static::@00b1035662dfc489da27",
+					"index" : 88
+				},
+				{
+					"id" : "sundials_sunlinsoldense_shared::@00b1035662dfc489da27",
+					"index" : 87
+				},
+				{
+					"id" : "sundials_sunlinsolpcg_static::@a4c60b2e963d4413f43d",
+					"index" : 92
+				},
+				{
+					"id" : "sundials_sunlinsolpcg_shared::@a4c60b2e963d4413f43d",
+					"index" : 91
+				},
+				{
+					"id" : "sundials_sunlinsolspbcgs_static::@3bdc00ae3c147b1b7f47",
+					"index" : 96
+				},
+				{
+					"id" : "sundials_sunlinsolspbcgs_shared::@3bdc00ae3c147b1b7f47",
+					"index" : 95
+				},
+				{
+					"id" : "sundials_sunlinsolspfgmr_static::@996e4a97d651b31baa79",
+					"index" : 100
+				},
+				{
+					"id" : "sundials_sunlinsolspfgmr_shared::@996e4a97d651b31baa79",
+					"index" : 99
+				},
+				{
+					"id" : "sundials_sunlinsolspgmr_static::@c21d7bc95c1f66719caa",
+					"index" : 104
+				},
+				{
+					"id" : "sundials_sunlinsolspgmr_shared::@c21d7bc95c1f66719caa",
+					"index" : 103
+				},
+				{
+					"id" : "sundials_sunlinsolsptfqmr_static::@d423cf339be4234e3b44",
+					"index" : 108
+				},
+				{
+					"id" : "sundials_sunlinsolsptfqmr_shared::@d423cf339be4234e3b44",
+					"index" : 107
+				},
+				{
+					"id" : "sundials_sunnonlinsolnewton_static::@c6457e989a8aa20d612a",
+					"index" : 130
+				},
+				{
+					"id" : "sundials_sunnonlinsolnewton_shared::@c6457e989a8aa20d612a",
+					"index" : 129
+				},
+				{
+					"id" : "sundials_sunnonlinsolfixedpoint_static::@ade3ca747cf236bb5038",
+					"index" : 126
+				},
+				{
+					"id" : "sundials_sunnonlinsolfixedpoint_shared::@ade3ca747cf236bb5038",
+					"index" : 125
+				},
+				{
+					"id" : "sundials_arkode_static::@d37c5f4d269f7c1295a0",
+					"index" : 64
+				},
+				{
+					"id" : "sundials_arkode_shared::@d37c5f4d269f7c1295a0",
+					"index" : 63
+				},
+				{
+					"id" : "sundials_cvode_static::@141fcf21c205d04e6249",
+					"index" : 68
+				},
+				{
+					"id" : "sundials_cvode_shared::@141fcf21c205d04e6249",
+					"index" : 67
+				}
+			],
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/CMakeFiles/Export/1e15bb323e05de61a0039c5fa416b865/SUNDIALSTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/sundials",
+			"paths" : 
+			[
+				"cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/SUNDIALSConfig.cmake",
+				"cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/SUNDIALSConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Submodules/PelePhysics/Submodules/sundials",
+		"source" : "Submodules/PelePhysics/Submodules/sundials"
+	}
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c96cc51d-a215-4319-98c7-540a43d80225" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/prob.H" beforeDir="false" afterPath="$PROJECT_DIR$/prob.H" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Source/IO.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Source/IO.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Source/Params/param_includes/pelec_defaults.H" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Source/Params/param_includes/pelec_defaults.H" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Source/Params/param_includes/pelec_params.H" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Source/Params/param_includes/pelec_params.H" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Source/Params/param_includes/pelec_queries.H" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Source/Params/param_includes/pelec_queries.H" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Source/PeleC.H" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Source/PeleC.H" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Source/PeleC.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Source/PeleC.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Source/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Source/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Submodules/PelePhysics" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Submodules/PelePhysics" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="3.1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2fLCBr9OJCGM1lm70iG6vBJLwea" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.advertisement.text.has.clang-format": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "development",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c96cc51d-a215-4319-98c7-540a43d80225" name="Changes" comment="" />
+      <created>1713570838859</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713570838859</updated>
+      <workItem from="1713570839908" duration="605000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

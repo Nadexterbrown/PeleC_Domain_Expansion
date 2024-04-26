@@ -1,0 +1,113 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"sundials_add_library"
+		],
+		"files" : 
+		[
+			"Submodules/PelePhysics/Submodules/sundials/src/nvector/manyvector/CMakeLists.txt",
+			"Submodules/PelePhysics/Submodules/sundials/cmake/macros/SundialsAddLibrary.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 353,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 353,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 364,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/src/nvector/manyvector/libsundials_nvecmanyvector.a"
+			],
+			"targetId" : "sundials_nvecmanyvector_static::@5faa6b9a93d67b4b5218",
+			"targetIndex" : 76,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/src/nvector/manyvector/libsundials_nvecmanyvector.6.6.2.dylib",
+				"Submodules/PelePhysics/Submodules/sundials/src/nvector/manyvector/libsundials_nvecmanyvector.6.dylib"
+			],
+			"targetId" : "sundials_nvecmanyvector_shared::@5faa6b9a93d67b4b5218",
+			"targetIndex" : 75,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/src/nvector/manyvector/libsundials_nvecmanyvector.dylib"
+			],
+			"targetId" : "sundials_nvecmanyvector_shared::@5faa6b9a93d67b4b5218",
+			"targetIndex" : 75,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "include/nvector",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/include/nvector/nvector_manyvector.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Submodules/PelePhysics/Submodules/sundials/src/nvector/manyvector",
+		"source" : "Submodules/PelePhysics/Submodules/sundials/src/nvector/manyvector"
+	}
+}

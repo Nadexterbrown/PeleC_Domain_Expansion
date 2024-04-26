@@ -1,0 +1,113 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"sundials_add_library"
+		],
+		"files" : 
+		[
+			"Submodules/PelePhysics/Submodules/sundials/src/nvector/serial/CMakeLists.txt",
+			"Submodules/PelePhysics/Submodules/sundials/cmake/macros/SundialsAddLibrary.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 353,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 353,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 364,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/src/nvector/serial/libsundials_nvecserial.a"
+			],
+			"targetId" : "sundials_nvecserial_static::@a4577ab9a49e72278069",
+			"targetIndex" : 80,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/src/nvector/serial/libsundials_nvecserial.6.6.2.dylib",
+				"Submodules/PelePhysics/Submodules/sundials/src/nvector/serial/libsundials_nvecserial.6.dylib"
+			],
+			"targetId" : "sundials_nvecserial_shared::@a4577ab9a49e72278069",
+			"targetIndex" : 79,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/src/nvector/serial/libsundials_nvecserial.dylib"
+			],
+			"targetId" : "sundials_nvecserial_shared::@a4577ab9a49e72278069",
+			"targetIndex" : 79,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "include/nvector",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/include/nvector/nvector_serial.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Submodules/PelePhysics/Submodules/sundials/src/nvector/serial",
+		"source" : "Submodules/PelePhysics/Submodules/sundials/src/nvector/serial"
+	}
+}

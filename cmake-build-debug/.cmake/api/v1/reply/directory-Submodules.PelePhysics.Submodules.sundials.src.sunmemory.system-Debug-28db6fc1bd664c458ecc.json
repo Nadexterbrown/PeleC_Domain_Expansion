@@ -1,0 +1,51 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"sundials_add_library"
+		],
+		"files" : 
+		[
+			"Submodules/PelePhysics/Submodules/sundials/cmake/macros/SundialsAddLibrary.cmake",
+			"Submodules/PelePhysics/Submodules/sundials/src/sunmemory/system/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 364,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/sunmemory",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/include/sunmemory/sunmemory_system.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunmemory/system",
+		"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunmemory/system"
+	}
+}

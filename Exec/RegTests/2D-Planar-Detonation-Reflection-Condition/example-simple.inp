@@ -1,0 +1,313 @@
+# ------------------  INPUTS TO MAIN PROGRAM  -------------------
+# -----------------------
+# SIMULATION RUN TIME CRITERIA
+# -----------------------
+# Stopping criteria: at least one must be specified, simulation
+# will stop when the first is met.
+
+# absolute stop time (s) for the simulation
+stop_time =  1e-3
+
+# maximum number of time steps at base AMR level
+#max_step = 1000000000
+
+# -----------------------
+# PROBLEM SIZE & GEOMETRY
+# -----------------------
+# >>>>>>>>>>>>>  Parameter Options  <<<<<<<<<<<<<<<<<<<<<<
+# 1) geometry.is_periodic     # Axis periodicity (periodicity (0 = False, 1 = True) is dictated by x y z)
+# 2) geometry.coord_sys       # Simulation coordinate system (0 => cart, 1 => RZ  2=>spherical)
+# 3) geometry.prob_lo         # Domain size is dictated through lower corner coordinates (x y z)
+# 4) geometry.prob_hi         # Domain size is dictated through corner coordinates (x y z)
+# 5) amr.n_cell               # Number of cells in each dimension (x y z) (note: dx=dy=dz)
+# >>>>>>>>>>>>>  Parameter Options  <<<<<<<<<<<<<<<<<<<<<<
+
+geometry.coord_sys    = 0
+geometry.is_periodic  = 0 1 1
+geometry.prob_lo      = 0.0 0.0 0.0
+geometry.prob_hi      = 96e-0 7.5e-1 1e-1
+amr.n_cell            = 2048 16 1
+
+# ---------------------------------------------------------------
+
+# -------------------  PELEC SPECIFIC INPUTS  -------------------
+
+#------------------------
+# BOUNDARY CONDITIONS
+# >>>>>>>>>>>>>  Parameter Options  <<<<<<<<<<<<<<<<<<<<<<
+# 1) pelec.lo_bc      # boundary condition at the lower face of each coordinate direction (Interior, UserBC/Hard, Symmetry, SlipWall, NoSlipWall, FOExtrap)
+# 2) pelec.hi_bc      # boundary condition at the upper face of each coordinate direction (Interior, UserBC/Hard, Symmetry, SlipWall, NoSlipWall, FOExtrap)
+# >>>>>>>>>>>>>  Parameter Options  <<<<<<<<<<<<<<<<<<<<<<
+
+# >>>>>>>>>>>>>  BC KEYWORDS <<<<<<<<<<<<<<<<<<<<<<
+# Inflow, Outflow boundary conditions require careful account of the
+# propagation of information across them, this means that custom boundary
+# condition statements in prob.H must be written depending
+# In PeleC such boundaries are accounted for in 3 possible configurations
+# See https://amrex-combustion.github.io/PeleC/BoundaryConditions.html for
+# more help
+# >>>>>>>>>>>>>  BC KEYWORDS <<<<<<<<<<<<<<<<<<<<<<
+
+pelec.lo_bc = "NoSlipWall" "Interior" "Interior"
+pelec.hi_bc = "Interior" "Interior" "Interior"
+
+#------------------------
+# TIME STEP CONTROL
+#------------------------
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+# 1) pelec.cfl              # cfl number for hyperbolic system
+# 2) pelec.init_shrink      # scale back initial timestep
+# 3) pelec.change_max       #
+# 4) pelec.dt_cutoff        # level 0 timestep below which we halt
+# 5) pelec.fixed_dt         # fixed timesetp size
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+
+pelec.cfl           = 0.1
+pelec.init_shrink   = 0.1
+pelec.change_max    = 1.1
+pelec.dt_cutoff     = 5e-20
+#pelec.fixed_dt      = 1e-13
+
+#------------------------
+# WHICH PHYSICS
+#------------------------
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+# 1) pelec.do_hydro                   # enable hyperbolic term (0 = False, 1 = True)
+# 2) pelec.do_mol                     # use method of lines (MOL) (0 = False, 1 = True)
+# 3) pelec.diffuse_vel                # enable viscous diffusion (0 = False, 1 = True)
+# 4) pelec.diffuse_temp               # enable thermal diffusion (0 = False, 1 = True)
+# 5) pelec.diffuse_spec               # enable species diffusion (0 = False, 1 = True)
+# 6) pelec.diffuse_enth               # enable enthalpy diffusion (0 = False, 1 = True)
+# 7) pelec.do_react                   # enable chemical reactions (0 = False, 1 = True)
+# 8) pelec.do_grav                    # enable gravity (0 = False, 1 = True)
+# 9) pelec.add_ext_src                # add external source term (0 = False, 1 = True)
+# 10) pelec.external_forcing          #
+# 11) pelec.allow_negative_energy     # (0 = False, 1 = True)
+# 12) pelec.ppm_type                  # piecewise parabolic reconstruction type
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+
+pelec.do_react      = 1
+pelec.do_mol        = 0
+pelec.do_hydro      = 1
+pelec.diffuse_vel   = 1
+pelec.diffuse_temp  = 1
+pelec.diffuse_spec  = 1
+pelec.diffuse_enth  = 1
+#pelec.add_ext_src   = 0
+#pelec.sdc_iters     = 2
+
+#------------------------
+# DIAGNOSTICS & VERBOSITY
+#------------------------
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+# 1) pelec.sum_interval   # timesteps between computing mass
+# 2) pelec.v              # verbosity in PeleC.cpp
+# 3) amr.v                # verbosity in Amr.cpp
+# 4) amr.grid_log         # name of grid logging file
+# 5) amr.data_log         # name of data logging file
+# 6)
+# 7)
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+# coarse time steps between computing integral of
+# conserved variables in the  domain
+# these values should stabilize at steady state
+
+pelec.sum_interval  = 1
+pelec.v             = 1
+amr.v               = 1
+#amr.data_log        = datlog
+
+# ---------------------------------------------------------------
+
+# --------------------  AMR SPECIFIC INPUTS  --------------------
+
+#------------------------
+# REFINEMENT / REGRIDDING
+#------------------------
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+# 1) amr.max_level            # maximum level number allowed
+# 2) amr.ref_ratio            # refinement ratio (n separated values, where n is the max level)
+# 3) amr.regrid_int           # how often to regrid (n separated values, where n is the max level)
+# 4) amr.grid_eff             # what constitutes an efficient grid
+# 5) amr.blocking_factor      # block factor in grid generation
+# 6) amr.max_grid_size        # maximum possible grid points (must be larger then the maximum value in amr.n_cell)
+# 7) amr.n_error_buf          # number of buffer cells in error est (n separated values, where n is the max level)
+# 8) amr.blocking_factor      # block factor in grid generation (min box size)
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+
+amr.max_level       = 6
+amr.ref_ratio       = 2 2 2 2 2 2 2 2
+amr.regrid_int      = 2 2 2 2 2 2 2 2
+amr.blocking_factor = 8
+amr.max_grid_size   = 512 512 512 256 256 256 256
+amr.n_error_buf     = 2 2 2 2 2 2 2 2
+
+
+#------------------------
+# CHECKPOINT FILES
+#------------------------
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+# 1) amr.restart                    # start simulation from checkpoint file
+# 2) amr.checkpoint_files_output    # No = 0, Yes = 1
+# 3) amr.check_file                 # root name of checkpoint file
+# 4) amr.check_int                  # number of timesteps between checkpoints
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+
+amr.restart                 = "chk25000"
+amr.checkpoint_files_output = 1
+amr.check_file              = chk
+amr.check_int               = 1000
+
+#------------------------
+# PLOTFILES
+#------------------------
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+# 1) amr.plot_files_output  # No = 0, Yes = 1
+# 2) amr.plot_file
+# 3) amr.plot_int
+# 4) amr.plot_per
+# 5) amr.plot_vars
+# 6) amr.derive_plot_vars
+# 7) pelec.plot_rhoy
+# 8) pelec.plot_massfrac
+# 9) pelec.plot_reaction
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+
+amr.plot_files_output = 1
+amr.plot_file         = plt
+amr.plot_int          = 100
+amr.plot_vars         = density xmom ymom Temp
+amr.derive_plot_vars  = pressure x_velocity y_velocity Y_H Y_OH
+pelec.plot_rhoy       = 0
+pelec.plot_massfrac   = 1
+pelec.plot_reaction   = 0
+
+#------------------------
+# PROBLEM PARAMETERS
+#------------------------
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+# 1) prob.T_in
+# 2) prob.pamb
+# 3) prob.phi_in
+# 4) prob.pertmag
+# 5) prob.standoff
+# 6) prob.pmf_datafile
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+#prob.pmf_datafile = "pmf-LiDryer-H2_PHI1.0_T300_P101325-X.dat"
+#prob.pmf_datafile = "pmf-LiDryer-H2_PHI1.0_T300_P101325-X-Inverted.dat"
+prob.pmf_datafile = "overdriven-shock-pressure-H2_PHI1.0_T300_P101325-Inverted.dat"
+
+#------------------------
+# TAGGING PARAMETERS
+#------------------------
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+# 1) tagging.refinement_indicators          # (x y z low x y z high)
+# 2) tagging.yLow.in_box_lo
+# 3) tagging.yLow.in_box_hi
+# 4) tagging.yHigh.in_box_lo
+# 5) tagging.yHigh.in_box_hi
+# 6) tagging.max_ftracerr_lev
+# 7) tagging.ftracer
+# 8) pelec.flame_trac_name                  # Species Name
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+# Please look in Tagging.H for more tagging parameter options ()
+
+pelec.flame_trac_name      = H2
+tagging.max_ftracgrad_lev  = 6
+tagging.ftracgrad          = 5.0e-2
+
+# Flame Temperature Gradient Refinement
+tagging.max_tempgrad_lev = 6
+tagging.tempgrad         = 1.0e3
+
+# Boundary Layer Velocity Gradient Refinement
+tagging.max_velgrad_lev = 3
+tagging.velgrad         = 1.0e4
+
+# Shock Pressure Gradient Refinement
+tagging.max_pressgrad_lev = 6
+tagging.pressgrad       = 1.0e6
+
+# ---------------------------------------------------------------
+
+# ---------------  EMBEDDED BOUNDARY (EB) INPUTS  ---------------
+
+#------------------------
+# PROBLEM SETUP
+#------------------------
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+# 1) eb2.geom_type
+# 2)
+# 3)
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+
+
+# ---------------------------------------------------------------
+
+# ---------------------  DEBUG/HPC CONTROL  ---------------------
+
+#------------------------
+# PROBLEM SETUP
+#------------------------
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+# 1) amrex.fpe_trap_invalid
+# 2) amrex.fpe_trap_zero
+# 3) amrex.fpe_trap_overflow
+# 4)
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+
+
+# ---------------------------------------------------------------
+
+# -----------------  OPTIONAL INPUT PARAMETERS  -----------------
+
+#------------------------
+# DERIVED CONTROLS
+#------------------------
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+# 1)
+# 2)
+# 3)
+# 4)
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+
+
+#------------------------
+# REACTOR CONTROLS
+#------------------------
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+# 1) pelec.chem_integrator    # ReactorCvode, ReactorRK64
+# 2) ode.rtol                 # Relative tolerance of the chemical solve
+# 3) ode.atol                 # Absolute tolerance factor applied on typical values
+# 4) cvode.solve_type         # CVODE Linear solve type (for Newton direction) (GMRES, )
+# 5) cvode.max_order          # CVODE max BDF order.
+# 6)
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+
+pelec.chem_integrator = "ReactorCvode"
+cvode.solve_type      = GMRES
+
+#------------------------
+# LINEAR SOLVER CONTROL
+#------------------------
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+# 1)
+# 2)
+# 3)
+# 4)
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+
+
+#------------------------
+# PROBLEM SPECIFIC REFINEMENT CONTROL
+#------------------------
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+# 1) amr.refinement_indicators                # Marker variables to drive grid refinement (gradT, yH)
+# 2) amr.____.max_level                       # max level for indicated marker variable
+# 3) amr.____.adjacent_difference_greater     # maximum adjacent difference in values between cells for indicated marker variable
+# 4) amr.____.field_name                      # indicated marker variable name (temp, Y(H), etc.)
+# 5) amr.____.start_time                      # Earliest time allowing for refinement
+# 6) amr.____.end_time                        # Latest time for refinement
+# >>>>>>>>>>>>>  Parameter Options <<<<<<<<<<<<<<<<<<<<<<
+
+# ---------------------------------------------------------------

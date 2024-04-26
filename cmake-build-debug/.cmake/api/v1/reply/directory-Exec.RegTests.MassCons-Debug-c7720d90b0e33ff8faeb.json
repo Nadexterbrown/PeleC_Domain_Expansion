@@ -1,0 +1,65 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"build_pele_exe",
+			"include"
+		],
+		"files" : 
+		[
+			"CMake/BuildPeleExe.cmake",
+			"CMake/BuildExeAndLib.cmake",
+			"Exec/RegTests/MassCons/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 134,
+				"parent" : 3
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"Exec/RegTests/MassCons/PeleC-MassCons"
+			],
+			"targetId" : "PeleC-MassCons::@9500c170b22f7b02179a",
+			"targetIndex" : 12,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Exec/RegTests/MassCons",
+		"source" : "Exec/RegTests/MassCons"
+	}
+}

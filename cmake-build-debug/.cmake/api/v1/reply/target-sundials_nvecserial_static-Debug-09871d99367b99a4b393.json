@@ -1,0 +1,218 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "Submodules/PelePhysics/Submodules/sundials/src/nvector/serial/libsundials_nvecserial.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"sundials_add_library",
+			"install",
+			"target_compile_definitions",
+			"target_include_directories",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"Submodules/PelePhysics/Submodules/sundials/cmake/macros/SundialsAddLibrary.cmake",
+			"Submodules/PelePhysics/Submodules/sundials/src/nvector/serial/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 230,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 353,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 294,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 280,
+				"parent" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 243,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "sundials_generic_obj_static::@e268509f36a99912da80"
+		},
+		{
+			"id" : "sundials_nvecserial_obj_static::@a4577ab9a49e72278069"
+		}
+	],
+	"id" : "sundials_nvecserial_static::@a4577ab9a49e72278069",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 3,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"name" : "sundials_nvecserial_static",
+	"nameOnDisk" : "libsundials_nvecserial.a",
+	"paths" : 
+	{
+		"build" : "Submodules/PelePhysics/Submodules/sundials/src/nvector/serial",
+		"source" : "Submodules/PelePhysics/Submodules/sundials/src/nvector/serial"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/nvector/serial/CMakeFiles/sundials_nvecserial_obj_static.dir/nvector_serial.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/sundials_band.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/sundials_context.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/sundials_dense.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/sundials_direct.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/sundials_iterative.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/sundials_linearsolver.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/sundials_logger.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/sundials_math.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/sundials_matrix.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/sundials_memory.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/sundials_nonlinearsolver.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/sundials_nvector.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/sundials_nvector_senswrapper.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/sundials/CMakeFiles/sundials_generic_obj_static.dir/sundials_version.c.o",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

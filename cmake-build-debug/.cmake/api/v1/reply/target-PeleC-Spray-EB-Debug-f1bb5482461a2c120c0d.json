@@ -1,0 +1,1102 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Exec/RegTests/Spray-EB/PeleC-Spray-EB"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"build_pele_exe",
+			"include",
+			"install",
+			"target_link_libraries",
+			"generate_buildinfo",
+			"build_pele_physics_lib",
+			"target_include_directories",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"CMake/BuildPeleExe.cmake",
+			"CMake/BuildExeAndLib.cmake",
+			"Exec/RegTests/Spray-EB/CMakeLists.txt",
+			"Submodules/PelePhysics/Submodules/amrex/Tools/CMake/AMReXBuildInfo.cmake",
+			"CMake/BuildPelePhysicsLib.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 134,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 132,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 6,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 183,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 240,
+				"parent" : 8
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 186,
+				"parent" : 7
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 3
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 3
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 3
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 31,
+				"parent" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 87,
+				"parent" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 115,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-pedantic"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-faligned-new"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wunreachable-code"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wnull-dereference"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wfloat-conversion"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Woverloaded-virtual"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-pass-failed"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-c++17-extensions"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-O0"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-unused-variable"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "AMREX_SPACEDIM=3"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "PELE_USE_SPRAY"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "SPRAY_FUEL_NUM=1"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "USE_FUEGO_EOS"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "USE_SIMPLE_TRANSPORT"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 11,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Exec/RegTests/Spray-EB"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Source"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/cmake-build-debug"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Source/Params/param_includes"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Source/Utility/TurbInflow"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Source/Utility/Diagnostics"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Source/Utility/PltFileManager"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Source/Utility/Filter"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Source"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Source/Transport"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Source/Eos"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Source/Reactions"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Source/Spray"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Source/Spray/Distribution"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Source/Spray/BreakupSplash"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/sundials/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/sundials/src/sundials"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/amrex/Src/Base"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/amrex/Src/Base/Parser"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/amrex/Src/Boundary"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/amrex/Src/AmrCore"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/amrex/Src/Amr"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/amrex/Src/EB"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/amrex/Src/Particle"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/cmake-build-debug/Submodules/PelePhysics/Submodules/amrex"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/amrex/Src/Extern/SUNDIALS"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Mechanisms/heptane_3sp"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/amrex/Tools/C_scripts"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					6
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				4,
+				5,
+				8,
+				11,
+				13,
+				15,
+				16,
+				19,
+				21,
+				23,
+				26,
+				27,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42,
+				43,
+				45,
+				46,
+				48,
+				52,
+				54,
+				55,
+				56
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "amrex_3d::@ad2175af6fcf3885971e"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "sundials_arkode_shared::@d37c5f4d269f7c1295a0"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "sundials_cvode_shared::@141fcf21c205d04e6249"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF::@3af8538eca41ebfac901"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "buildInfoPelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF::@3af8538eca41ebfac901"
+		}
+	],
+	"id" : "PeleC-Spray-EB::@3af8538eca41ebfac901",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/arkode -Wl,-rpath,/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/cmake-build-debug/Submodules/PelePhysics/Submodules/sundials/src/cvode",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "Submodules/PelePhysics/Submodules/amrex/Src/libamrex_3d.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "Exec/RegTests/Spray-EB/libbuildInfoPelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "Submodules/PelePhysics/Submodules/sundials/src/arkode/libsundials_arkode.5.6.2.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "Submodules/PelePhysics/Submodules/sundials/src/cvode/libsundials_cvode.6.6.2.dylib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "PeleC-Spray-EB",
+	"nameOnDisk" : "PeleC-Spray-EB",
+	"paths" : 
+	{
+		"build" : "Exec/RegTests/Spray-EB",
+		"source" : "Exec/RegTests/Spray-EB"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				6,
+				7,
+				9,
+				10,
+				12,
+				14,
+				17,
+				18,
+				20,
+				22,
+				24,
+				25,
+				28,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39,
+				41,
+				44,
+				47,
+				49,
+				50,
+				51,
+				53
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				4,
+				5,
+				8,
+				11,
+				13,
+				15,
+				16,
+				19,
+				21,
+				23,
+				26,
+				27,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42,
+				43,
+				45,
+				46,
+				48,
+				52,
+				54,
+				55,
+				56
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 15,
+			"path" : "Exec/RegTests/Spray-EB/prob_parm.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 15,
+			"path" : "Exec/RegTests/Spray-EB/prob.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 15,
+			"compileGroupIndex" : 0,
+			"path" : "Exec/RegTests/Spray-EB/prob.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Advance.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/BCfill.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Bld.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/Constants.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/Derive.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Derive.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/Diffterm.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/Diffusion.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Diffusion.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/EB.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/EB.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/EBStencilTypes.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/External.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Forcing.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/GradUtil.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/Hydro.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Hydro.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/Geometry.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Geometry.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/Godunov.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Godunov.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/PLM.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/PPM.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/PPM.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/InitEB.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/IndexDefines.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/IO.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/IO.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/LES.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/LES.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/MOL.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/MOL.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/PeleC.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/PeleC.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/PeleCAmr.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/PeleCAmr.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/ProblemSpecificFunctions.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/React.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/Riemann.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Setup.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Sources.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/SparseData.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/SumIQ.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/SumUtils.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/Tagging.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Tagging.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/Timestep.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/TransCoeff.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/Utilities.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 16,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Utilities.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Source/WENO.H",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 17,
+			"compileGroupIndex" : 0,
+			"path" : "Exec/RegTests/Spray-EB/SprayParticlesInitInsert.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 17,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Particle.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 18,
+			"compileGroupIndex" : 0,
+			"path" : "Source/main.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Utility/TurbInflow/turbinflow.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Utility/Diagnostics/DiagBase.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Utility/Diagnostics/DiagConditional.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Utility/Diagnostics/DiagFilter.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Utility/Diagnostics/DiagFramePlane.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Utility/Diagnostics/DiagPDF.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Utility/PltFileManager/PltFileManager.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Utility/Filter/Filter.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Submodules/amrex/Src/Extern/SUNDIALS/AMReX_Sundials_Core.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Submodules/amrex/Src/Extern/SUNDIALS/AMReX_NVector_MultiFab.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Submodules/amrex/Src/Extern/SUNDIALS/AMReX_SUNMemory.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Transport/Transport.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Eos/EOS.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Mechanisms/heptane_3sp/mechanism.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Reactions/ReactorArkode.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Reactions/ReactorBase.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Reactions/ReactorCvode.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Reactions/ReactorCvodeCustomLinSolver.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Reactions/ReactorCvodeJacobian.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Reactions/ReactorCvodePreconditioner.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Reactions/ReactorCvodeUtils.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Reactions/ReactorNull.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Reactions/ReactorRK64.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Reactions/ReactorUtils.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Spray/SprayDerive.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Spray/SprayIO.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Spray/SprayJet.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Spray/SprayParticles.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Spray/SpraySB.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Spray/SpraySetup.cpp.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Exec/RegTests/Spray-EB/CMakeFiles/PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF.dir/__/__/__/Submodules/PelePhysics/Source/Spray/Distribution/Distributions.cpp.o",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "EXECUTABLE"
+}

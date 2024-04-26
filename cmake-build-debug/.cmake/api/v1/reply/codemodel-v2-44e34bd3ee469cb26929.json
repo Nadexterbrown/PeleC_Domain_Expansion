@@ -1,0 +1,2395 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						10,
+						35,
+						67
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/amrex",
+					"childIndexes" : 
+					[
+						2,
+						9
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.amrex-Debug-127c3e944dc3c1597a7f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Submodules/PelePhysics/Submodules/amrex",
+					"targetIndexes" : 
+					[
+						131
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/amrex/Src",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.amrex.Src-Debug-a8a09c8de00c475e4b02.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "Submodules/PelePhysics/Submodules/amrex/Src",
+					"targetIndexes" : 
+					[
+						40
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/amrex/Src/Base",
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.amrex.Src.Base-Debug-79a0dbf2fc56ab645421.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "Submodules/PelePhysics/Submodules/amrex/Src/Base"
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/amrex/Src/Boundary",
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.amrex.Src.Boundary-Debug-5e497fb70933b272a5bb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "Submodules/PelePhysics/Submodules/amrex/Src/Boundary"
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/amrex/Src/AmrCore",
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.amrex.Src.AmrCore-Debug-547283b8f923322ef42e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "Submodules/PelePhysics/Submodules/amrex/Src/AmrCore"
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/amrex/Src/Amr",
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.amrex.Src.Amr-Debug-df261fa0173536b57a16.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "Submodules/PelePhysics/Submodules/amrex/Src/Amr"
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/amrex/Src/EB",
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.amrex.Src.EB-Debug-faac4ffb2efc8488995e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "Submodules/PelePhysics/Submodules/amrex/Src/EB"
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/amrex/Src/Particle",
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.amrex.Src.Particle-Debug-3df4fac9e9361b501840.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "Submodules/PelePhysics/Submodules/amrex/Src/Particle"
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/amrex/Tools/Plotfile",
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.amrex.Tools.Plotfile-Debug-87dd53fb070de9c3d418.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "Submodules/PelePhysics/Submodules/amrex/Tools/Plotfile",
+					"targetIndexes" : 
+					[
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59,
+						60
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials",
+					"childIndexes" : 
+					[
+						11
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials-Debug-eb5a1688c99fcc75cad5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials"
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src",
+					"childIndexes" : 
+					[
+						12,
+						13,
+						16,
+						20,
+						28,
+						31,
+						33,
+						34
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src-Debug-22e3c4bd4c94dcd6b9b7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src"
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sundials",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sundials-Debug-cfd8a21cf77f7259282d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sundials",
+					"targetIndexes" : 
+					[
+						69,
+						70,
+						71,
+						72
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/nvector",
+					"childIndexes" : 
+					[
+						14,
+						15
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.nvector-Debug-abdc8915eae7d161dcce.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/nvector"
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/nvector/serial",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.nvector.serial-Debug-48357c4ac26a74fff348.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 13,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/nvector/serial",
+					"targetIndexes" : 
+					[
+						77,
+						78,
+						79,
+						80
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/nvector/manyvector",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.nvector.manyvector-Debug-de10d703b098cfe13961.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 13,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/nvector/manyvector",
+					"targetIndexes" : 
+					[
+						73,
+						74,
+						75,
+						76
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunmatrix",
+					"childIndexes" : 
+					[
+						17,
+						18,
+						19
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunmatrix-Debug-2a47c7afd5ba2973ebd6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunmatrix"
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunmatrix/band",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunmatrix.band-Debug-27fdf96d3426fe930b7d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunmatrix/band",
+					"targetIndexes" : 
+					[
+						109,
+						110,
+						111,
+						112
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunmatrix/dense",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunmatrix.dense-Debug-00f9babbbe4bffbe88fb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunmatrix/dense",
+					"targetIndexes" : 
+					[
+						113,
+						114,
+						115,
+						116
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunmatrix/sparse",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunmatrix.sparse-Debug-7bcdd02c831d3726be4a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunmatrix/sparse",
+					"targetIndexes" : 
+					[
+						117,
+						118,
+						119,
+						120
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol",
+					"childIndexes" : 
+					[
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunlinsol-Debug-7efa49cd06da04f00dea.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol"
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/band",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunlinsol.band-Debug-5869c8b357ac2579409a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/band",
+					"targetIndexes" : 
+					[
+						81,
+						82,
+						83,
+						84
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/dense",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunlinsol.dense-Debug-df24b870cdea723d179a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/dense",
+					"targetIndexes" : 
+					[
+						85,
+						86,
+						87,
+						88
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/pcg",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunlinsol.pcg-Debug-7971f7eceed10f4639fe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/pcg",
+					"targetIndexes" : 
+					[
+						89,
+						90,
+						91,
+						92
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/spbcgs",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunlinsol.spbcgs-Debug-0aad4d983f825ea36d7a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/spbcgs",
+					"targetIndexes" : 
+					[
+						93,
+						94,
+						95,
+						96
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/spfgmr",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunlinsol.spfgmr-Debug-520fcad446be4b0aa11b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/spfgmr",
+					"targetIndexes" : 
+					[
+						97,
+						98,
+						99,
+						100
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/spgmr",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunlinsol.spgmr-Debug-739b81d1a500372b3791.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/spgmr",
+					"targetIndexes" : 
+					[
+						101,
+						102,
+						103,
+						104
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/sptfqmr",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunlinsol.sptfqmr-Debug-d572d19b10ebe61e7740.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/sptfqmr",
+					"targetIndexes" : 
+					[
+						105,
+						106,
+						107,
+						108
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunnonlinsol",
+					"childIndexes" : 
+					[
+						29,
+						30
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunnonlinsol-Debug-2f9cc04f6cebe5618ed5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunnonlinsol"
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunnonlinsol/newton",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunnonlinsol.newton-Debug-a9ea14fa51c2758242d9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 28,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunnonlinsol/newton",
+					"targetIndexes" : 
+					[
+						127,
+						128,
+						129,
+						130
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunnonlinsol/fixedpoint",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunnonlinsol.fixedpoint-Debug-73533f96fcba21b4c824.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 28,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunnonlinsol/fixedpoint",
+					"targetIndexes" : 
+					[
+						123,
+						124,
+						125,
+						126
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunmemory",
+					"childIndexes" : 
+					[
+						32
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunmemory-Debug-14f3bd8f2d2d97405470.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunmemory"
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunmemory/system",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.sunmemory.system-Debug-28db6fc1bd664c458ecc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 31,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunmemory/system",
+					"targetIndexes" : 
+					[
+						121,
+						122
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/arkode",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.arkode-Debug-aad9923a5c015f0c6bfd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/arkode",
+					"targetIndexes" : 
+					[
+						61,
+						62,
+						63,
+						64
+					]
+				},
+				{
+					"build" : "Submodules/PelePhysics/Submodules/sundials/src/cvode",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Submodules.PelePhysics.Submodules.sundials.src.cvode-Debug-85ed412eb950a4e7cbe9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 3,
+					"source" : "Submodules/PelePhysics/Submodules/sundials/src/cvode",
+					"targetIndexes" : 
+					[
+						65,
+						66,
+						67,
+						68
+					]
+				},
+				{
+					"build" : "Exec",
+					"childIndexes" : 
+					[
+						36
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec-Debug-807422abde7047dad763.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Exec"
+				},
+				{
+					"build" : "Exec/RegTests",
+					"childIndexes" : 
+					[
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59,
+						60,
+						61,
+						62,
+						63,
+						64,
+						65,
+						66
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests-Debug-d04af5226339e56788d3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 35,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests"
+				},
+				{
+					"build" : "Exec/RegTests/HIT",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.HIT-Debug-7effb1193b2b7bdae006.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/HIT",
+					"targetIndexes" : 
+					[
+						11,
+						38,
+						49
+					]
+				},
+				{
+					"build" : "Exec/RegTests/MultiSpecSod",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.MultiSpecSod-Debug-ff3980b1959ca41511c7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/MultiSpecSod",
+					"targetIndexes" : 
+					[
+						13,
+						30,
+						41
+					]
+				},
+				{
+					"build" : "Exec/RegTests/PMF",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.PMF-Debug-3087d6201928975bd877.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/PMF",
+					"targetIndexes" : 
+					[
+						14,
+						31,
+						42
+					]
+				},
+				{
+					"build" : "Exec/RegTests/PMF-SRK",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.PMF-SRK-Debug-1a014a10aed37a44577c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/PMF-SRK",
+					"targetIndexes" : 
+					[
+						15,
+						39,
+						50
+					]
+				},
+				{
+					"build" : "Exec/RegTests/Sedov",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.Sedov-Debug-ed50f95368b9a2d10408.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/Sedov",
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"build" : "Exec/RegTests/Shu-Osher",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.Shu-Osher-Debug-113df9b0e2f8d058cbd6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/Shu-Osher",
+					"targetIndexes" : 
+					[
+						17
+					]
+				},
+				{
+					"build" : "Exec/RegTests/Sod",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.Sod-Debug-c003eca110726380114a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/Sod",
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"build" : "Exec/RegTests/ChannelFlow",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.ChannelFlow-Debug-66c8f62ee99824cfc0a1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/ChannelFlow",
+					"targetIndexes" : 
+					[
+						0,
+						33,
+						44
+					]
+				},
+				{
+					"build" : "Exec/RegTests/TG",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.TG-Debug-3db6e9823a3cf3dacb18.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/TG",
+					"targetIndexes" : 
+					[
+						28
+					]
+				},
+				{
+					"build" : "Exec/RegTests/zeroD",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.zeroD-Debug-394bef4bfb916c206f26.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/zeroD",
+					"targetIndexes" : 
+					[
+						29
+					]
+				},
+				{
+					"build" : "Exec/RegTests/MassCons",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.MassCons-Debug-c7720d90b0e33ff8faeb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/MassCons",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "Exec/RegTests/Spray-Conv",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.Spray-Conv-Debug-e5d2be9be117b52787bf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/Spray-Conv",
+					"targetIndexes" : 
+					[
+						22,
+						35,
+						46
+					]
+				},
+				{
+					"build" : "Exec/RegTests/Spray-A-Wbreakup",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.Spray-A-Wbreakup-Debug-50f7cc8996cd14f24915.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/Spray-A-Wbreakup",
+					"targetIndexes" : 
+					[
+						21,
+						36,
+						47
+					]
+				},
+				{
+					"build" : "Exec/RegTests/Spray-EB",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.Spray-EB-Debug-c8d3f73002a23087cbf7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/Spray-EB",
+					"targetIndexes" : 
+					[
+						23,
+						37,
+						48
+					]
+				},
+				{
+					"build" : "Exec/RegTests/Spray-Evaporation",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.Spray-Evaporation-Debug-f0631a083eda036f3cc3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/Spray-Evaporation",
+					"targetIndexes" : 
+					[
+						24
+					]
+				},
+				{
+					"build" : "Exec/RegTests/Spray-Jet",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.Spray-Jet-Debug-20a92f8c04d207f5f088.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/Spray-Jet",
+					"targetIndexes" : 
+					[
+						25
+					]
+				},
+				{
+					"build" : "Exec/RegTests/Spray-Multijet",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.Spray-Multijet-Debug-84e13e9ccd60d4eb0814.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/Spray-Multijet",
+					"targetIndexes" : 
+					[
+						26
+					]
+				},
+				{
+					"build" : "Exec/RegTests/Spray-TG",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.Spray-TG-Debug-ad493f81f38be2d1069c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/Spray-TG",
+					"targetIndexes" : 
+					[
+						27,
+						34,
+						45
+					]
+				},
+				{
+					"build" : "Exec/RegTests/EB-C3",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.EB-C3-Debug-07afef648e653b93aa14.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/EB-C3",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "Exec/RegTests/EB-C4-5",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.EB-C4-5-Debug-fcdf882aa050cb4edbe1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/EB-C4-5",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "Exec/RegTests/EB-C9",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.EB-C9-Debug-ac00e284bb8b4faf18f3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/EB-C9",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "Exec/RegTests/EB-C10",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.EB-C10-Debug-91f7092da710f4391f8c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/EB-C10",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "Exec/RegTests/EB-C11",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.EB-C11-Debug-bb0bcf59f95b21129c36.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/EB-C11",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "Exec/RegTests/EB-C12",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.EB-C12-Debug-948cdc9b134218980325.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/EB-C12",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "Exec/RegTests/EB-ConvergingNozzle",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.EB-ConvergingNozzle-Debug-0c2f2cc17149a0ee6b79.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/EB-ConvergingNozzle",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "Exec/RegTests/Soot-ZeroD",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.Soot-ZeroD-Debug-d1784ab5e06ff9227fcc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/Soot-ZeroD",
+					"targetIndexes" : 
+					[
+						20,
+						32,
+						43
+					]
+				},
+				{
+					"build" : "Exec/RegTests/Soot-Flame",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.Soot-Flame-Debug-cac47173c1f09679b4e7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/Soot-Flame",
+					"targetIndexes" : 
+					[
+						19
+					]
+				},
+				{
+					"build" : "Exec/RegTests/EB-C7",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.EB-C7-Debug-dd6e0b0fccf28f4428fc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/EB-C7",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "Exec/RegTests/EB-C8",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.EB-C8-Debug-c5dde4474927820db7ce.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/EB-C8",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "Exec/RegTests/EB-BluffBody",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Exec.RegTests.EB-BluffBody-Debug-b82ab19c79105867439d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 36,
+					"projectIndex" : 0,
+					"source" : "Exec/RegTests/EB-BluffBody",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "Tests",
+					"jsonFile" : "directory-Tests-Debug-0bb2ec8d84e8c19149a9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Tests"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59,
+						60,
+						61,
+						62,
+						63,
+						64,
+						65,
+						66,
+						67
+					],
+					"name" : "PeleC",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"name" : "AMReX",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						40,
+						131
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						9
+					],
+					"name" : "AMReX-PlotfileTools",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59,
+						60
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34
+					],
+					"name" : "SUNDIALS",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						61,
+						62,
+						63,
+						64,
+						65,
+						66,
+						67,
+						68,
+						69,
+						70,
+						71,
+						72,
+						73,
+						74,
+						75,
+						76,
+						77,
+						78,
+						79,
+						80,
+						81,
+						82,
+						83,
+						84,
+						85,
+						86,
+						87,
+						88,
+						89,
+						90,
+						91,
+						92,
+						93,
+						94,
+						95,
+						96,
+						97,
+						98,
+						99,
+						100,
+						101,
+						102,
+						103,
+						104,
+						105,
+						106,
+						107,
+						108,
+						109,
+						110,
+						111,
+						112,
+						113,
+						114,
+						115,
+						116,
+						117,
+						118,
+						119,
+						120,
+						121,
+						122,
+						123,
+						124,
+						125,
+						126,
+						127,
+						128,
+						129,
+						130
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 44,
+					"id" : "PeleC-ChannelFlow::@d39824905da872cf3dbb",
+					"jsonFile" : "target-PeleC-ChannelFlow-Debug-e6c3618c5c3cc0416885.json",
+					"name" : "PeleC-ChannelFlow",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 66,
+					"id" : "PeleC-EB-BluffBody::@ee2e9ebcb7210302f15f",
+					"jsonFile" : "target-PeleC-EB-BluffBody-Debug-48dfd2c2d9ff20a15a11.json",
+					"name" : "PeleC-EB-BluffBody",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 58,
+					"id" : "PeleC-EB-C10::@afa90a846e4f0a78c5cb",
+					"jsonFile" : "target-PeleC-EB-C10-Debug-bb44b559680195fb8552.json",
+					"name" : "PeleC-EB-C10",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 59,
+					"id" : "PeleC-EB-C11::@d8bd05c068330ad57bfd",
+					"jsonFile" : "target-PeleC-EB-C11-Debug-084e9913960e851b7a35.json",
+					"name" : "PeleC-EB-C11",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 60,
+					"id" : "PeleC-EB-C12::@2c0349c9e66ac87b6d68",
+					"jsonFile" : "target-PeleC-EB-C12-Debug-b8674c55d5d12afec958.json",
+					"name" : "PeleC-EB-C12",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 55,
+					"id" : "PeleC-EB-C3::@34b539e7be5147cfaa00",
+					"jsonFile" : "target-PeleC-EB-C3-Debug-d16b0326072f45d12bcb.json",
+					"name" : "PeleC-EB-C3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 56,
+					"id" : "PeleC-EB-C4-5::@d066a078e3abb2aca482",
+					"jsonFile" : "target-PeleC-EB-C4-5-Debug-b22c3515145ec23bf8b9.json",
+					"name" : "PeleC-EB-C4-5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 64,
+					"id" : "PeleC-EB-C7::@a7626a8e7e5c0d78e595",
+					"jsonFile" : "target-PeleC-EB-C7-Debug-f3b5a2eeabd8ed0e622c.json",
+					"name" : "PeleC-EB-C7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 65,
+					"id" : "PeleC-EB-C8::@279ebe06ab8f7fbea3fb",
+					"jsonFile" : "target-PeleC-EB-C8-Debug-c6da5cb719cfc23df043.json",
+					"name" : "PeleC-EB-C8",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 57,
+					"id" : "PeleC-EB-C9::@88ddbba532b71402ceba",
+					"jsonFile" : "target-PeleC-EB-C9-Debug-8d38dbbee922260209e7.json",
+					"name" : "PeleC-EB-C9",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 61,
+					"id" : "PeleC-EB-ConvergingNozzle::@de15c58d21ca7308d957",
+					"jsonFile" : "target-PeleC-EB-ConvergingNozzle-Debug-2846b3840fd07e49872f.json",
+					"name" : "PeleC-EB-ConvergingNozzle",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 37,
+					"id" : "PeleC-HIT::@dd88d92c470638d26413",
+					"jsonFile" : "target-PeleC-HIT-Debug-3e1a1363ec57130daea9.json",
+					"name" : "PeleC-HIT",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 47,
+					"id" : "PeleC-MassCons::@9500c170b22f7b02179a",
+					"jsonFile" : "target-PeleC-MassCons-Debug-6ff00ea8ae1b4d0c854b.json",
+					"name" : "PeleC-MassCons",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 38,
+					"id" : "PeleC-MultiSpecSod::@3d96d7600775962286fc",
+					"jsonFile" : "target-PeleC-MultiSpecSod-Debug-6662229e3d2090f61dfc.json",
+					"name" : "PeleC-MultiSpecSod",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 39,
+					"id" : "PeleC-PMF::@298a0d12586c306234b4",
+					"jsonFile" : "target-PeleC-PMF-Debug-b537835395838270998b.json",
+					"name" : "PeleC-PMF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 40,
+					"id" : "PeleC-PMF-SRK::@99a31ab9c3b8fc57f85e",
+					"jsonFile" : "target-PeleC-PMF-SRK-Debug-7b7c2ea1e7ce50fdf498.json",
+					"name" : "PeleC-PMF-SRK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 41,
+					"id" : "PeleC-Sedov::@481e15a53ad0eaaf1c83",
+					"jsonFile" : "target-PeleC-Sedov-Debug-21cd838b3697d6f23022.json",
+					"name" : "PeleC-Sedov",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 42,
+					"id" : "PeleC-Shu-Osher::@2acbf9e2c5a28cec3ff7",
+					"jsonFile" : "target-PeleC-Shu-Osher-Debug-531b4ce4556caf6d918d.json",
+					"name" : "PeleC-Shu-Osher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "PeleC-Sod::@758657dc7e870c06dbdf",
+					"jsonFile" : "target-PeleC-Sod-Debug-ca2dcadaa204863c17b2.json",
+					"name" : "PeleC-Sod",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 63,
+					"id" : "PeleC-Soot-Flame::@72584034582c8646978f",
+					"jsonFile" : "target-PeleC-Soot-Flame-Debug-5fee427d0cc5265f7408.json",
+					"name" : "PeleC-Soot-Flame",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 62,
+					"id" : "PeleC-Soot-ZeroD::@31414fdd6176f77955c4",
+					"jsonFile" : "target-PeleC-Soot-ZeroD-Debug-e79fbbc7de05f01841ba.json",
+					"name" : "PeleC-Soot-ZeroD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 49,
+					"id" : "PeleC-Spray-A-Wbreakup::@f04e4b09df33676492fb",
+					"jsonFile" : "target-PeleC-Spray-A-Wbreakup-Debug-2ae341d28a50c4511ef2.json",
+					"name" : "PeleC-Spray-A-Wbreakup",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 48,
+					"id" : "PeleC-Spray-Conv::@a5961a5ceff549bc04c0",
+					"jsonFile" : "target-PeleC-Spray-Conv-Debug-99c9364a92f4ae9dd05e.json",
+					"name" : "PeleC-Spray-Conv",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 50,
+					"id" : "PeleC-Spray-EB::@3af8538eca41ebfac901",
+					"jsonFile" : "target-PeleC-Spray-EB-Debug-f1bb5482461a2c120c0d.json",
+					"name" : "PeleC-Spray-EB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 51,
+					"id" : "PeleC-Spray-Evaporation::@a1e26f9e3f3065851109",
+					"jsonFile" : "target-PeleC-Spray-Evaporation-Debug-d67db1f48346c55b4e46.json",
+					"name" : "PeleC-Spray-Evaporation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 52,
+					"id" : "PeleC-Spray-Jet::@8d858af0f33470e2622e",
+					"jsonFile" : "target-PeleC-Spray-Jet-Debug-394ce2b8050ebe801a13.json",
+					"name" : "PeleC-Spray-Jet",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 53,
+					"id" : "PeleC-Spray-Multijet::@5b82b74c29cf46a59188",
+					"jsonFile" : "target-PeleC-Spray-Multijet-Debug-4c8dd10c9e083d71e3d4.json",
+					"name" : "PeleC-Spray-Multijet",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 54,
+					"id" : "PeleC-Spray-TG::@a7481473820a64fa837c",
+					"jsonFile" : "target-PeleC-Spray-TG-Debug-be086ebe0f0da0fdce1b.json",
+					"name" : "PeleC-Spray-TG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 45,
+					"id" : "PeleC-TG::@0fae9eec896de061b372",
+					"jsonFile" : "target-PeleC-TG-Debug-b9061017adfafc573a7c.json",
+					"name" : "PeleC-TG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 46,
+					"id" : "PeleC-zeroD::@5771accc627ce914722d",
+					"jsonFile" : "target-PeleC-zeroD-Debug-6c11ce225e0292884ab2.json",
+					"name" : "PeleC-zeroD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 38,
+					"id" : "PelePhysicsLib-Fuego-Davis-Simple-SprayOFF-SootOFF::@3d96d7600775962286fc",
+					"jsonFile" : "target-PelePhysicsLib-Fuego-Davis-Simple-SprayOFF-SootOFF-Debug-9a064a3f1267bc74e55d.json",
+					"name" : "PelePhysicsLib-Fuego-Davis-Simple-SprayOFF-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 39,
+					"id" : "PelePhysicsLib-Fuego-LiDryer-Simple-SprayOFF-SootOFF::@298a0d12586c306234b4",
+					"jsonFile" : "target-PelePhysicsLib-Fuego-LiDryer-Simple-SprayOFF-SootOFF-Debug-4430d51fd3cb3f8f1a7a.json",
+					"name" : "PelePhysicsLib-Fuego-LiDryer-Simple-SprayOFF-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 62,
+					"id" : "PelePhysicsLib-Fuego-SootReaction-Simple-SprayOFF-SootON::@31414fdd6176f77955c4",
+					"jsonFile" : "target-PelePhysicsLib-Fuego-SootReaction-Simple-SprayOFF-SootON-Debug-836896b8d6bc2fecb2e7.json",
+					"name" : "PelePhysicsLib-Fuego-SootReaction-Simple-SprayOFF-SootON",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 44,
+					"id" : "PelePhysicsLib-Fuego-air-Constant-SprayOFF-SootOFF::@d39824905da872cf3dbb",
+					"jsonFile" : "target-PelePhysicsLib-Fuego-air-Constant-SprayOFF-SootOFF-Debug-5c7e56a5ad734af098f2.json",
+					"name" : "PelePhysicsLib-Fuego-air-Constant-SprayOFF-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 54,
+					"id" : "PelePhysicsLib-Fuego-air-Constant-SprayON-SootOFF::@a7481473820a64fa837c",
+					"jsonFile" : "target-PelePhysicsLib-Fuego-air-Constant-SprayON-SootOFF-Debug-14b89e5f3c9146bb7cd2.json",
+					"name" : "PelePhysicsLib-Fuego-air-Constant-SprayON-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 48,
+					"id" : "PelePhysicsLib-Fuego-decane_3sp-Simple-SprayON-SootOFF::@a5961a5ceff549bc04c0",
+					"jsonFile" : "target-PelePhysicsLib-Fuego-decane_3sp-Simple-SprayON-SootOFF-Debug-f792512bd4a1566d5e54.json",
+					"name" : "PelePhysicsLib-Fuego-decane_3sp-Simple-SprayON-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 49,
+					"id" : "PelePhysicsLib-Fuego-dodecane_lu-Simple-SprayON-SootOFF::@f04e4b09df33676492fb",
+					"jsonFile" : "target-PelePhysicsLib-Fuego-dodecane_lu-Simple-SprayON-SootOFF-Debug-da5b12a73bca6af56742.json",
+					"name" : "PelePhysicsLib-Fuego-dodecane_lu-Simple-SprayON-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 50,
+					"id" : "PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF::@3af8538eca41ebfac901",
+					"jsonFile" : "target-PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF-Debug-3fbd9ca06af84deffab4.json",
+					"name" : "PelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 37,
+					"id" : "PelePhysicsLib-GammaLaw-Null-Constant-SprayOFF-SootOFF::@dd88d92c470638d26413",
+					"jsonFile" : "target-PelePhysicsLib-GammaLaw-Null-Constant-SprayOFF-SootOFF-Debug-821d0baa1ce4a674ed8a.json",
+					"name" : "PelePhysicsLib-GammaLaw-Null-Constant-SprayOFF-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 40,
+					"id" : "PelePhysicsLib-Soave-Redlich-Kwong-LiDryer-Simple-SprayOFF-SootOFF::@99a31ab9c3b8fc57f85e",
+					"jsonFile" : "target-PelePhysicsLib-Soave-Redlich-Kwong-LiDryer-Simple-SprayOFF-SootOFF-Debug-b3ffdbd9ba159f2da2cf.json",
+					"name" : "PelePhysicsLib-Soave-Redlich-Kwong-LiDryer-Simple-SprayOFF-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "amrex_3d::@ad2175af6fcf3885971e",
+					"jsonFile" : "target-amrex_3d-Debug-c5840238d7cfb8f6b015.json",
+					"name" : "amrex_3d",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 38,
+					"id" : "buildInfoPelePhysicsLib-Fuego-Davis-Simple-SprayOFF-SootOFF::@3d96d7600775962286fc",
+					"jsonFile" : "target-buildInfoPelePhysicsLib-Fuego-Davis-Simple-SprayOFF-SootOFF-Debug-e2deedc2604a42ed73b5.json",
+					"name" : "buildInfoPelePhysicsLib-Fuego-Davis-Simple-SprayOFF-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 39,
+					"id" : "buildInfoPelePhysicsLib-Fuego-LiDryer-Simple-SprayOFF-SootOFF::@298a0d12586c306234b4",
+					"jsonFile" : "target-buildInfoPelePhysicsLib-Fuego-LiDryer-Simple-SprayOFF-SootOFF-Debug-81dd90e437c56b4cab2a.json",
+					"name" : "buildInfoPelePhysicsLib-Fuego-LiDryer-Simple-SprayOFF-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 62,
+					"id" : "buildInfoPelePhysicsLib-Fuego-SootReaction-Simple-SprayOFF-SootON::@31414fdd6176f77955c4",
+					"jsonFile" : "target-buildInfoPelePhysicsLib-Fuego-SootReaction-Simple-SprayOFF-SootON-Debug-1b17358f290390b28eff.json",
+					"name" : "buildInfoPelePhysicsLib-Fuego-SootReaction-Simple-SprayOFF-SootON",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 44,
+					"id" : "buildInfoPelePhysicsLib-Fuego-air-Constant-SprayOFF-SootOFF::@d39824905da872cf3dbb",
+					"jsonFile" : "target-buildInfoPelePhysicsLib-Fuego-air-Constant-SprayOFF-SootOFF-Debug-81e2590435518d5391b8.json",
+					"name" : "buildInfoPelePhysicsLib-Fuego-air-Constant-SprayOFF-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 54,
+					"id" : "buildInfoPelePhysicsLib-Fuego-air-Constant-SprayON-SootOFF::@a7481473820a64fa837c",
+					"jsonFile" : "target-buildInfoPelePhysicsLib-Fuego-air-Constant-SprayON-SootOFF-Debug-fb09844ed2837cb4e9a1.json",
+					"name" : "buildInfoPelePhysicsLib-Fuego-air-Constant-SprayON-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 48,
+					"id" : "buildInfoPelePhysicsLib-Fuego-decane_3sp-Simple-SprayON-SootOFF::@a5961a5ceff549bc04c0",
+					"jsonFile" : "target-buildInfoPelePhysicsLib-Fuego-decane_3sp-Simple-SprayON-SootOFF-Debug-4476a8db11bbec03589e.json",
+					"name" : "buildInfoPelePhysicsLib-Fuego-decane_3sp-Simple-SprayON-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 49,
+					"id" : "buildInfoPelePhysicsLib-Fuego-dodecane_lu-Simple-SprayON-SootOFF::@f04e4b09df33676492fb",
+					"jsonFile" : "target-buildInfoPelePhysicsLib-Fuego-dodecane_lu-Simple-SprayON-SootOFF-Debug-dd731b5277d62fdc54d1.json",
+					"name" : "buildInfoPelePhysicsLib-Fuego-dodecane_lu-Simple-SprayON-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 50,
+					"id" : "buildInfoPelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF::@3af8538eca41ebfac901",
+					"jsonFile" : "target-buildInfoPelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF-Debug-cdd5add719bdd3b47337.json",
+					"name" : "buildInfoPelePhysicsLib-Fuego-heptane_3sp-Simple-SprayON-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 37,
+					"id" : "buildInfoPelePhysicsLib-GammaLaw-Null-Constant-SprayOFF-SootOFF::@dd88d92c470638d26413",
+					"jsonFile" : "target-buildInfoPelePhysicsLib-GammaLaw-Null-Constant-SprayOFF-SootOFF-Debug-f4d75900eda6f0c082c8.json",
+					"name" : "buildInfoPelePhysicsLib-GammaLaw-Null-Constant-SprayOFF-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 40,
+					"id" : "buildInfoPelePhysicsLib-Soave-Redlich-Kwong-LiDryer-Simple-SprayOFF-SootOFF::@99a31ab9c3b8fc57f85e",
+					"jsonFile" : "target-buildInfoPelePhysicsLib-Soave-Redlich-Kwong-LiDryer-Simple-SprayOFF-SootOFF-Debug-14f72d7239b30bfe5806.json",
+					"name" : "buildInfoPelePhysicsLib-Soave-Redlich-Kwong-LiDryer-Simple-SprayOFF-SootOFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "fboxinfo::@d4cdeb08f248a4d1d7eb",
+					"jsonFile" : "target-fboxinfo-Debug-0695ab897d046d874c21.json",
+					"name" : "fboxinfo",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "fcompare::@d4cdeb08f248a4d1d7eb",
+					"jsonFile" : "target-fcompare-Debug-e75961ab96720bff8e70.json",
+					"name" : "fcompare",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "fextract::@d4cdeb08f248a4d1d7eb",
+					"jsonFile" : "target-fextract-Debug-2719bb2349e7bb891217.json",
+					"name" : "fextract",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "fextrema::@d4cdeb08f248a4d1d7eb",
+					"jsonFile" : "target-fextrema-Debug-d7e838aac64aba07122e.json",
+					"name" : "fextrema",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "fgradient::@d4cdeb08f248a4d1d7eb",
+					"jsonFile" : "target-fgradient-Debug-174918959120f8ce0ab7.json",
+					"name" : "fgradient",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "fnan::@d4cdeb08f248a4d1d7eb",
+					"jsonFile" : "target-fnan-Debug-bef3894f3d93f1e3764a.json",
+					"name" : "fnan",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "fsnapshot::@d4cdeb08f248a4d1d7eb",
+					"jsonFile" : "target-fsnapshot-Debug-4fe04bf7931ad7a71502.json",
+					"name" : "fsnapshot",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "ftime::@d4cdeb08f248a4d1d7eb",
+					"jsonFile" : "target-ftime-Debug-fc8f6ac2a6231415becc.json",
+					"name" : "ftime",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "fvarnames::@d4cdeb08f248a4d1d7eb",
+					"jsonFile" : "target-fvarnames-Debug-69c1b302395da0c36559.json",
+					"name" : "fvarnames",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "fvolumesum::@d4cdeb08f248a4d1d7eb",
+					"jsonFile" : "target-fvolumesum-Debug-5250abb64f2fc73db015.json",
+					"name" : "fvolumesum",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 33,
+					"id" : "sundials_arkode_obj_shared::@d37c5f4d269f7c1295a0",
+					"jsonFile" : "target-sundials_arkode_obj_shared-Debug-fdee27d6ae840b8f796f.json",
+					"name" : "sundials_arkode_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 33,
+					"id" : "sundials_arkode_obj_static::@d37c5f4d269f7c1295a0",
+					"jsonFile" : "target-sundials_arkode_obj_static-Debug-b2bc918137d82d302aee.json",
+					"name" : "sundials_arkode_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 33,
+					"id" : "sundials_arkode_shared::@d37c5f4d269f7c1295a0",
+					"jsonFile" : "target-sundials_arkode_shared-Debug-f56d9694d32de5b7a018.json",
+					"name" : "sundials_arkode_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 33,
+					"id" : "sundials_arkode_static::@d37c5f4d269f7c1295a0",
+					"jsonFile" : "target-sundials_arkode_static-Debug-280b095d91680393a3c0.json",
+					"name" : "sundials_arkode_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 34,
+					"id" : "sundials_cvode_obj_shared::@141fcf21c205d04e6249",
+					"jsonFile" : "target-sundials_cvode_obj_shared-Debug-33b8f39b1c9f499e60f9.json",
+					"name" : "sundials_cvode_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 34,
+					"id" : "sundials_cvode_obj_static::@141fcf21c205d04e6249",
+					"jsonFile" : "target-sundials_cvode_obj_static-Debug-01f753780cd7170dc3c6.json",
+					"name" : "sundials_cvode_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 34,
+					"id" : "sundials_cvode_shared::@141fcf21c205d04e6249",
+					"jsonFile" : "target-sundials_cvode_shared-Debug-512cc4277c21cbe51e9d.json",
+					"name" : "sundials_cvode_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 34,
+					"id" : "sundials_cvode_static::@141fcf21c205d04e6249",
+					"jsonFile" : "target-sundials_cvode_static-Debug-5d7f33cfd4b8720e1149.json",
+					"name" : "sundials_cvode_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "sundials_generic_obj_shared::@e268509f36a99912da80",
+					"jsonFile" : "target-sundials_generic_obj_shared-Debug-6bef2978b5834edb5c70.json",
+					"name" : "sundials_generic_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "sundials_generic_obj_static::@e268509f36a99912da80",
+					"jsonFile" : "target-sundials_generic_obj_static-Debug-029681d070e8b5165f4d.json",
+					"name" : "sundials_generic_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "sundials_generic_shared::@e268509f36a99912da80",
+					"jsonFile" : "target-sundials_generic_shared-Debug-4738e926c0c9cf82e98f.json",
+					"name" : "sundials_generic_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "sundials_generic_static::@e268509f36a99912da80",
+					"jsonFile" : "target-sundials_generic_static-Debug-8e603b7e8c068704494e.json",
+					"name" : "sundials_generic_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "sundials_nvecmanyvector_obj_shared::@5faa6b9a93d67b4b5218",
+					"jsonFile" : "target-sundials_nvecmanyvector_obj_shared-Debug-0affe3f128f55a12b459.json",
+					"name" : "sundials_nvecmanyvector_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "sundials_nvecmanyvector_obj_static::@5faa6b9a93d67b4b5218",
+					"jsonFile" : "target-sundials_nvecmanyvector_obj_static-Debug-41a1b2bc4316504779c2.json",
+					"name" : "sundials_nvecmanyvector_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "sundials_nvecmanyvector_shared::@5faa6b9a93d67b4b5218",
+					"jsonFile" : "target-sundials_nvecmanyvector_shared-Debug-5c2407f337ac2d2f70af.json",
+					"name" : "sundials_nvecmanyvector_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "sundials_nvecmanyvector_static::@5faa6b9a93d67b4b5218",
+					"jsonFile" : "target-sundials_nvecmanyvector_static-Debug-2144fb85010223f5c193.json",
+					"name" : "sundials_nvecmanyvector_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "sundials_nvecserial_obj_shared::@a4577ab9a49e72278069",
+					"jsonFile" : "target-sundials_nvecserial_obj_shared-Debug-8bd45edafcf4f8adc86f.json",
+					"name" : "sundials_nvecserial_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "sundials_nvecserial_obj_static::@a4577ab9a49e72278069",
+					"jsonFile" : "target-sundials_nvecserial_obj_static-Debug-464ef46dda265b8877b7.json",
+					"name" : "sundials_nvecserial_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "sundials_nvecserial_shared::@a4577ab9a49e72278069",
+					"jsonFile" : "target-sundials_nvecserial_shared-Debug-51df2089a694eaeea9d8.json",
+					"name" : "sundials_nvecserial_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "sundials_nvecserial_static::@a4577ab9a49e72278069",
+					"jsonFile" : "target-sundials_nvecserial_static-Debug-09871d99367b99a4b393.json",
+					"name" : "sundials_nvecserial_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "sundials_sunlinsolband_obj_shared::@49844e196713a6fe9742",
+					"jsonFile" : "target-sundials_sunlinsolband_obj_shared-Debug-47c790b5fcd9d6721594.json",
+					"name" : "sundials_sunlinsolband_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "sundials_sunlinsolband_obj_static::@49844e196713a6fe9742",
+					"jsonFile" : "target-sundials_sunlinsolband_obj_static-Debug-461765f204e4b7ed6355.json",
+					"name" : "sundials_sunlinsolband_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "sundials_sunlinsolband_shared::@49844e196713a6fe9742",
+					"jsonFile" : "target-sundials_sunlinsolband_shared-Debug-f065c291e16f5c366d93.json",
+					"name" : "sundials_sunlinsolband_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "sundials_sunlinsolband_static::@49844e196713a6fe9742",
+					"jsonFile" : "target-sundials_sunlinsolband_static-Debug-d4ae82221d9be5bda04b.json",
+					"name" : "sundials_sunlinsolband_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 22,
+					"id" : "sundials_sunlinsoldense_obj_shared::@00b1035662dfc489da27",
+					"jsonFile" : "target-sundials_sunlinsoldense_obj_shared-Debug-a122f7f7535ba78a3bd1.json",
+					"name" : "sundials_sunlinsoldense_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 22,
+					"id" : "sundials_sunlinsoldense_obj_static::@00b1035662dfc489da27",
+					"jsonFile" : "target-sundials_sunlinsoldense_obj_static-Debug-ab19d061d044a169a43a.json",
+					"name" : "sundials_sunlinsoldense_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 22,
+					"id" : "sundials_sunlinsoldense_shared::@00b1035662dfc489da27",
+					"jsonFile" : "target-sundials_sunlinsoldense_shared-Debug-e19db14bda2245a7e92b.json",
+					"name" : "sundials_sunlinsoldense_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 22,
+					"id" : "sundials_sunlinsoldense_static::@00b1035662dfc489da27",
+					"jsonFile" : "target-sundials_sunlinsoldense_static-Debug-707aa3cffde528f44073.json",
+					"name" : "sundials_sunlinsoldense_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 23,
+					"id" : "sundials_sunlinsolpcg_obj_shared::@a4c60b2e963d4413f43d",
+					"jsonFile" : "target-sundials_sunlinsolpcg_obj_shared-Debug-699d4141c93bb881886c.json",
+					"name" : "sundials_sunlinsolpcg_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 23,
+					"id" : "sundials_sunlinsolpcg_obj_static::@a4c60b2e963d4413f43d",
+					"jsonFile" : "target-sundials_sunlinsolpcg_obj_static-Debug-425ac509e6fae89592c6.json",
+					"name" : "sundials_sunlinsolpcg_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 23,
+					"id" : "sundials_sunlinsolpcg_shared::@a4c60b2e963d4413f43d",
+					"jsonFile" : "target-sundials_sunlinsolpcg_shared-Debug-1cdf729f7ae473b86726.json",
+					"name" : "sundials_sunlinsolpcg_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 23,
+					"id" : "sundials_sunlinsolpcg_static::@a4c60b2e963d4413f43d",
+					"jsonFile" : "target-sundials_sunlinsolpcg_static-Debug-27fc54279ff1d6bb84b1.json",
+					"name" : "sundials_sunlinsolpcg_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 24,
+					"id" : "sundials_sunlinsolspbcgs_obj_shared::@3bdc00ae3c147b1b7f47",
+					"jsonFile" : "target-sundials_sunlinsolspbcgs_obj_shared-Debug-947fef780ee8016cbb2e.json",
+					"name" : "sundials_sunlinsolspbcgs_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 24,
+					"id" : "sundials_sunlinsolspbcgs_obj_static::@3bdc00ae3c147b1b7f47",
+					"jsonFile" : "target-sundials_sunlinsolspbcgs_obj_static-Debug-66741e142913d6109103.json",
+					"name" : "sundials_sunlinsolspbcgs_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 24,
+					"id" : "sundials_sunlinsolspbcgs_shared::@3bdc00ae3c147b1b7f47",
+					"jsonFile" : "target-sundials_sunlinsolspbcgs_shared-Debug-04c1095f9b2072dc08bc.json",
+					"name" : "sundials_sunlinsolspbcgs_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 24,
+					"id" : "sundials_sunlinsolspbcgs_static::@3bdc00ae3c147b1b7f47",
+					"jsonFile" : "target-sundials_sunlinsolspbcgs_static-Debug-451d3f388c16eea29e77.json",
+					"name" : "sundials_sunlinsolspbcgs_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 25,
+					"id" : "sundials_sunlinsolspfgmr_obj_shared::@996e4a97d651b31baa79",
+					"jsonFile" : "target-sundials_sunlinsolspfgmr_obj_shared-Debug-9bda7bff2b8457371dd6.json",
+					"name" : "sundials_sunlinsolspfgmr_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 25,
+					"id" : "sundials_sunlinsolspfgmr_obj_static::@996e4a97d651b31baa79",
+					"jsonFile" : "target-sundials_sunlinsolspfgmr_obj_static-Debug-1808b0a1113c98b2ba07.json",
+					"name" : "sundials_sunlinsolspfgmr_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 25,
+					"id" : "sundials_sunlinsolspfgmr_shared::@996e4a97d651b31baa79",
+					"jsonFile" : "target-sundials_sunlinsolspfgmr_shared-Debug-ab7aa3fdac90e1d299d9.json",
+					"name" : "sundials_sunlinsolspfgmr_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 25,
+					"id" : "sundials_sunlinsolspfgmr_static::@996e4a97d651b31baa79",
+					"jsonFile" : "target-sundials_sunlinsolspfgmr_static-Debug-e3edfece85fa673cf045.json",
+					"name" : "sundials_sunlinsolspfgmr_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 26,
+					"id" : "sundials_sunlinsolspgmr_obj_shared::@c21d7bc95c1f66719caa",
+					"jsonFile" : "target-sundials_sunlinsolspgmr_obj_shared-Debug-cfbb0427260af4c0a3bb.json",
+					"name" : "sundials_sunlinsolspgmr_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 26,
+					"id" : "sundials_sunlinsolspgmr_obj_static::@c21d7bc95c1f66719caa",
+					"jsonFile" : "target-sundials_sunlinsolspgmr_obj_static-Debug-6b1185e4d2f8e6e870b7.json",
+					"name" : "sundials_sunlinsolspgmr_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 26,
+					"id" : "sundials_sunlinsolspgmr_shared::@c21d7bc95c1f66719caa",
+					"jsonFile" : "target-sundials_sunlinsolspgmr_shared-Debug-ec53689f934f90bde972.json",
+					"name" : "sundials_sunlinsolspgmr_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 26,
+					"id" : "sundials_sunlinsolspgmr_static::@c21d7bc95c1f66719caa",
+					"jsonFile" : "target-sundials_sunlinsolspgmr_static-Debug-dbeee08e9861a153a937.json",
+					"name" : "sundials_sunlinsolspgmr_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 27,
+					"id" : "sundials_sunlinsolsptfqmr_obj_shared::@d423cf339be4234e3b44",
+					"jsonFile" : "target-sundials_sunlinsolsptfqmr_obj_shared-Debug-f6cb5457bc9424586c26.json",
+					"name" : "sundials_sunlinsolsptfqmr_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 27,
+					"id" : "sundials_sunlinsolsptfqmr_obj_static::@d423cf339be4234e3b44",
+					"jsonFile" : "target-sundials_sunlinsolsptfqmr_obj_static-Debug-18cc34974858cb1f583d.json",
+					"name" : "sundials_sunlinsolsptfqmr_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 27,
+					"id" : "sundials_sunlinsolsptfqmr_shared::@d423cf339be4234e3b44",
+					"jsonFile" : "target-sundials_sunlinsolsptfqmr_shared-Debug-676daabcfd91e981cdd0.json",
+					"name" : "sundials_sunlinsolsptfqmr_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 27,
+					"id" : "sundials_sunlinsolsptfqmr_static::@d423cf339be4234e3b44",
+					"jsonFile" : "target-sundials_sunlinsolsptfqmr_static-Debug-5c16cdb031bee9d6f433.json",
+					"name" : "sundials_sunlinsolsptfqmr_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "sundials_sunmatrixband_obj_shared::@b504149cce3665afca6e",
+					"jsonFile" : "target-sundials_sunmatrixband_obj_shared-Debug-b3a473eb2303918fa1e6.json",
+					"name" : "sundials_sunmatrixband_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "sundials_sunmatrixband_obj_static::@b504149cce3665afca6e",
+					"jsonFile" : "target-sundials_sunmatrixband_obj_static-Debug-656e813f13e0598410f3.json",
+					"name" : "sundials_sunmatrixband_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "sundials_sunmatrixband_shared::@b504149cce3665afca6e",
+					"jsonFile" : "target-sundials_sunmatrixband_shared-Debug-d48de300047b2b38d8f9.json",
+					"name" : "sundials_sunmatrixband_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "sundials_sunmatrixband_static::@b504149cce3665afca6e",
+					"jsonFile" : "target-sundials_sunmatrixband_static-Debug-9c8ee6ed64cecda969c4.json",
+					"name" : "sundials_sunmatrixband_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "sundials_sunmatrixdense_obj_shared::@a85b1b091132cefa44aa",
+					"jsonFile" : "target-sundials_sunmatrixdense_obj_shared-Debug-61622da752704a0b872d.json",
+					"name" : "sundials_sunmatrixdense_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "sundials_sunmatrixdense_obj_static::@a85b1b091132cefa44aa",
+					"jsonFile" : "target-sundials_sunmatrixdense_obj_static-Debug-d2a02810abb343740c6c.json",
+					"name" : "sundials_sunmatrixdense_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "sundials_sunmatrixdense_shared::@a85b1b091132cefa44aa",
+					"jsonFile" : "target-sundials_sunmatrixdense_shared-Debug-be717fd92e76871dda67.json",
+					"name" : "sundials_sunmatrixdense_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "sundials_sunmatrixdense_static::@a85b1b091132cefa44aa",
+					"jsonFile" : "target-sundials_sunmatrixdense_static-Debug-c25a17f78e89a5feadb4.json",
+					"name" : "sundials_sunmatrixdense_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "sundials_sunmatrixsparse_obj_shared::@b725effa464d6f3489d2",
+					"jsonFile" : "target-sundials_sunmatrixsparse_obj_shared-Debug-1a2f6c24546b00b3cc72.json",
+					"name" : "sundials_sunmatrixsparse_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "sundials_sunmatrixsparse_obj_static::@b725effa464d6f3489d2",
+					"jsonFile" : "target-sundials_sunmatrixsparse_obj_static-Debug-1a09cfce528cad6a92a0.json",
+					"name" : "sundials_sunmatrixsparse_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "sundials_sunmatrixsparse_shared::@b725effa464d6f3489d2",
+					"jsonFile" : "target-sundials_sunmatrixsparse_shared-Debug-dc1f38fe524ebe159033.json",
+					"name" : "sundials_sunmatrixsparse_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "sundials_sunmatrixsparse_static::@b725effa464d6f3489d2",
+					"jsonFile" : "target-sundials_sunmatrixsparse_static-Debug-1683e4f4f6dcac2d963d.json",
+					"name" : "sundials_sunmatrixsparse_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 32,
+					"id" : "sundials_sunmemsys_obj_shared::@16a4c901d3a5c9a45d8c",
+					"jsonFile" : "target-sundials_sunmemsys_obj_shared-Debug-63bf5f187e785fc75fc7.json",
+					"name" : "sundials_sunmemsys_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 32,
+					"id" : "sundials_sunmemsys_obj_static::@16a4c901d3a5c9a45d8c",
+					"jsonFile" : "target-sundials_sunmemsys_obj_static-Debug-6f6c9298a43d572620d5.json",
+					"name" : "sundials_sunmemsys_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 30,
+					"id" : "sundials_sunnonlinsolfixedpoint_obj_shared::@ade3ca747cf236bb5038",
+					"jsonFile" : "target-sundials_sunnonlinsolfixedpoint_obj_shared-Debug-9bbc279afb14961900e8.json",
+					"name" : "sundials_sunnonlinsolfixedpoint_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 30,
+					"id" : "sundials_sunnonlinsolfixedpoint_obj_static::@ade3ca747cf236bb5038",
+					"jsonFile" : "target-sundials_sunnonlinsolfixedpoint_obj_static-Debug-43a4bf4934dfc33b0e68.json",
+					"name" : "sundials_sunnonlinsolfixedpoint_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 30,
+					"id" : "sundials_sunnonlinsolfixedpoint_shared::@ade3ca747cf236bb5038",
+					"jsonFile" : "target-sundials_sunnonlinsolfixedpoint_shared-Debug-f146bc196f101a99277d.json",
+					"name" : "sundials_sunnonlinsolfixedpoint_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 30,
+					"id" : "sundials_sunnonlinsolfixedpoint_static::@ade3ca747cf236bb5038",
+					"jsonFile" : "target-sundials_sunnonlinsolfixedpoint_static-Debug-85da562326f991c2868e.json",
+					"name" : "sundials_sunnonlinsolfixedpoint_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 29,
+					"id" : "sundials_sunnonlinsolnewton_obj_shared::@c6457e989a8aa20d612a",
+					"jsonFile" : "target-sundials_sunnonlinsolnewton_obj_shared-Debug-b985c6ec3d624d5767a8.json",
+					"name" : "sundials_sunnonlinsolnewton_obj_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 29,
+					"id" : "sundials_sunnonlinsolnewton_obj_static::@c6457e989a8aa20d612a",
+					"jsonFile" : "target-sundials_sunnonlinsolnewton_obj_static-Debug-ca56523507e640e1b0f8.json",
+					"name" : "sundials_sunnonlinsolnewton_obj_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 29,
+					"id" : "sundials_sunnonlinsolnewton_shared::@c6457e989a8aa20d612a",
+					"jsonFile" : "target-sundials_sunnonlinsolnewton_shared-Debug-0a03d2b6224564ab97c2.json",
+					"name" : "sundials_sunnonlinsolnewton_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 29,
+					"id" : "sundials_sunnonlinsolnewton_static::@c6457e989a8aa20d612a",
+					"jsonFile" : "target-sundials_sunnonlinsolnewton_static-Debug-25809236780d9ed904e1.json",
+					"name" : "sundials_sunnonlinsolnewton_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_install::@9dfb23985029b260b556",
+					"jsonFile" : "target-test_install-Debug-168740031f806d482561.json",
+					"name" : "test_install",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/cmake-build-debug",
+		"source" : "/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

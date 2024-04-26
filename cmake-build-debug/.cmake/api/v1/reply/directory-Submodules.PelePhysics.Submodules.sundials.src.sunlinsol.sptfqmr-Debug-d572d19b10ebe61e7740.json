@@ -1,0 +1,112 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"sundials_add_library"
+		],
+		"files" : 
+		[
+			"Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/sptfqmr/CMakeLists.txt",
+			"Submodules/PelePhysics/Submodules/sundials/cmake/macros/SundialsAddLibrary.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 353,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 353,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 364,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/sptfqmr/libsundials_sunlinsolsptfqmr.a"
+			],
+			"targetId" : "sundials_sunlinsolsptfqmr_static::@d423cf339be4234e3b44",
+			"targetIndex" : 108,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/sptfqmr/libsundials_sunlinsolsptfqmr.4.6.2.dylib"
+			],
+			"targetId" : "sundials_sunlinsolsptfqmr_shared::@d423cf339be4234e3b44",
+			"targetIndex" : 107,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/sptfqmr/libsundials_sunlinsolsptfqmr.dylib"
+			],
+			"targetId" : "sundials_sunlinsolsptfqmr_shared::@d423cf339be4234e3b44",
+			"targetIndex" : 107,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "include/sunlinsol",
+			"paths" : 
+			[
+				"Submodules/PelePhysics/Submodules/sundials/include/sunlinsol/sunlinsol_sptfqmr.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/sptfqmr",
+		"source" : "Submodules/PelePhysics/Submodules/sundials/src/sunlinsol/sptfqmr"
+	}
+}

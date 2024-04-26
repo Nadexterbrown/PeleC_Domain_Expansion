@@ -1,0 +1,42 @@
+ 0: amrex::BLBackTrace::print_backtrace_info(__sFILE*) (in PeleC2d.gnu.ex) (AMReX_BLBackTrace.cpp:189)
+
+ 1: amrex::BLBackTrace::handler(int) (in PeleC2d.gnu.ex) (AMReX_BLBackTrace.cpp:99)
+
+ 2: _sigtramp (in libsystem_platform.dylib) + 56
+
+ 4: pele::physics::reactions::ReactorCvode::cF_RHS(double, _generic_N_Vector*, _generic_N_Vector*, void*) (in PeleC2d.gnu.ex) (ReactorCvode.cpp:1717)
+
+ 5: cvNlsResidual (in libsundials_cvode.6.6.2.dylib) + 80
+
+ 6: SUNNonlinSolSolve_Newton (in libsundials_cvode.6.6.2.dylib) + 140
+
+ 7: CVode (in libsundials_cvode.6.6.2.dylib) + 5784
+
+ 8: pele::physics::reactions::ReactorCvode::react(amrex::Box const&, amrex::Array4<double> const&, amrex::Array4<double> const&, amrex::Array4<double> const&, amrex::Array4<double> const&, amrex::Array4<double> const&, amrex::Array4<double> const&, amrex::Array4<int> const&, double&, double&) (in PeleC2d.gnu.ex) (ReactorCvode.cpp:1408)
+
+ 9: PeleC::react_state(double, double, bool, amrex::MultiFab*) (in PeleC2d.gnu.ex) (React.cpp:0)
+
+10: PeleC::do_sdc_iteration(double, double, int, int, int, int) (in PeleC2d.gnu.ex) (Advance.cpp:0)
+
+11: PeleC::do_sdc_advance(double, double, int, int) (in PeleC2d.gnu.ex) (Advance.cpp:217)
+
+12: amrex::Amr::timeStep(int, double, int, int, double) (in PeleC2d.gnu.ex) (AMReX_Amr.cpp:0)
+
+13: amrex::Amr::timeStep(int, double, int, int, double) (in PeleC2d.gnu.ex) (AMReX_Amr.cpp:0)
+
+14: amrex::Amr::timeStep(int, double, int, int, double) (in PeleC2d.gnu.ex) (AMReX_Amr.cpp:0)
+
+15: amrex::Amr::timeStep(int, double, int, int, double) (in PeleC2d.gnu.ex) (AMReX_Amr.cpp:0)
+
+16: amrex::Amr::timeStep(int, double, int, int, double) (in PeleC2d.gnu.ex) (AMReX_Amr.cpp:0)
+
+17: amrex::Amr::timeStep(int, double, int, int, double) (in PeleC2d.gnu.ex) (AMReX_Amr.cpp:0)
+
+18: amrex::Amr::timeStep(int, double, int, int, double) (in PeleC2d.gnu.ex) (AMReX_Amr.cpp:0)
+
+19: amrex::Amr::coarseTimeStep(double) (in PeleC2d.gnu.ex) (AMReX_Amr.cpp:2133)
+
+20: main (in PeleC2d.gnu.ex) (main.cpp:165)
+
+21: start (in dyld) + 2224
+

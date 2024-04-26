@@ -1,0 +1,16 @@
+ 0: amrex::BLBackTrace::print_backtrace_info(__sFILE*) (in PeleC2d.gnu.ex) (AMReX_BLBackTrace.cpp:189)
+
+ 1: amrex::BLBackTrace::handler(int) (in PeleC2d.gnu.ex) (AMReX_BLBackTrace.cpp:99)
+
+ 2: _sigtramp (in libsystem_platform.dylib) + 56
+
+ 3: PeleC::estTimeStep(double) (in PeleC2d.gnu.ex) (PeleC.cpp:886)
+
+ 4: PeleC::computeInitialDt(int, int, amrex::Vector<int, std::__1::allocator<int>>&, amrex::Vector<amrex::IntVect, std::__1::allocator<amrex::IntVect>> const&, amrex::Vector<double, std::__1::allocator<double>>&, double) (in PeleC2d.gnu.ex) (PeleC.cpp:1078)
+
+ 5: amrex::Amr::coarseTimeStep(double) (in PeleC2d.gnu.ex) (AMReX_Amr.cpp:2130)
+
+ 6: main (in PeleC2d.gnu.ex) (main.cpp:165)
+
+ 7: start (in dyld) + 2224
+

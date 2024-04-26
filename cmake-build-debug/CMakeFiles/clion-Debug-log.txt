@@ -1,0 +1,108 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork -B /Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/cmake-build-debug
+-- The CXX compiler identification is AppleClang 15.0.0.15000040
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning at CMakeLists.txt:66 (message):
+  Disabling FPE trapping for tests when using AppleClang.
+
+
+-- AMReX Configure Section
+CMake Deprecation Warning at Submodules/PelePhysics/Submodules/amrex/CMakeLists.txt:26 (cmake_policy):
+  The OLD behavior for policy CMP0104 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- The C compiler identification is AppleClang 15.0.0.15000040
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- CMake version: 3.27.0
+-- AMReX installation directory: /usr/local
+-- Build type set by user to 'Debug'.
+-- Building AMReX with AMReX_SPACEDIM = 3
+-- Configuring AMReX with the following options enabled: 
+--    AMReX_PRECISION = DOUBLE
+--    AMReX_AMRLEVEL
+--    AMReX_EB
+--    AMReX_PARTICLES
+--    AMReX_PARTICLES_PRECISION = DOUBLE
+--    AMReX_EXPORT_DYNAMIC
+--    AMReX_PROBINIT
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- AMReX configuration summary: 
+--    Build type               = Debug
+--    Install directory        = /usr/local
+--    C++ compiler             = /Library/Developer/CommandLineTools/usr/bin/c++
+--    C++ defines              = -DAMREX_SPACEDIM=3
+--    C++ flags                = -g  -O0 -Wall -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable
+--    C++ include paths        = -I/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/amrex/Src/Base -I/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/amrex/Src/Base/Parser -I/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/amrex/Src/Boundary -I/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/amrex/Src/AmrCore -I/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/amrex/Src/Amr -I/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/amrex/Src/EB -I/Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/Submodules/PelePhysics/Submodules/amrex/Src/Particle
+--    Link line                = 
+-- SUNDIALS Configure Section
+-- SUNDIALS_GIT_VERSION: v6.6.2
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of int32_t
+-- Check size of int32_t - done
+-- Using int32_t for indices
+-- C standard set to 99
+-- C extensions set to ON
+-- Performing Test SUNDIALS_C_COMPILER_HAS_SNPRINTF_AND_VA_COPY
+-- Performing Test SUNDIALS_C_COMPILER_HAS_SNPRINTF_AND_VA_COPY - Success
+-- Performing Test SUNDIALS_C_COMPILER_HAS_MATH_PRECISIONS
+-- Performing Test SUNDIALS_C_COMPILER_HAS_MATH_PRECISIONS - Success
+-- Performing Test SUNDIALS_C_COMPILER_HAS_ISINF_ISNAN
+-- Performing Test SUNDIALS_C_COMPILER_HAS_ISINF_ISNAN - Success
+-- Performing Test SUNDIALS_C_COMPILER_HAS_INLINE
+-- Performing Test SUNDIALS_C_COMPILER_HAS_INLINE - Success
+-- Looking for POSIX timers... found
+-- Performing Test COMPILER_HAS_DEPRECATED_MSG
+-- Performing Test COMPILER_HAS_DEPRECATED_MSG - Success
+-- Appending C DEBUG flags
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Added NVECTOR_SERIAL module
+-- Added NVECTOR_MANYVECTOR module
+-- Added SUNMATRIX_BAND module
+-- Added SUNMATRIX_DENSE module
+-- Added SUNMATRIX_SPARSE module
+-- Added SUNLINSOL_BAND module
+-- Added SUNLINSOL_DENSE module
+-- Added SUNLINSOL_PCG module
+-- Added SUNLINSOL_SPBCGS module
+-- Added SUNLINSOL_SPFGMR module
+-- Added SUNLINSOL_SPGMR module
+-- Added SUNLINSOL_SPTFQMR module
+-- Added SUNNONLINSOL_NEWTON module
+-- Added SUNNONLINSOL_FIXEDPOINT module
+-- Added ARKODE module
+-- Added CVODE module
+-- PeleC Information:
+-- CMAKE_SYSTEM_NAME = Darwin
+-- CMAKE_CXX_COMPILER_ID = AppleClang
+-- CMAKE_CXX_COMPILER_VERSION = 15.0.0.15000040
+-- CMAKE_BUILD_TYPE = Debug
+-- PELE_PRECISION = DOUBLE
+-- Found Git: /usr/bin/git (found version "2.39.3 (Apple Git-145)") 
+-- Configuring done (20.2s)
+-- Generating done (0.5s)
+-- Build files have been written to: /Users/nolan/Desktop/Research/PeleC-Builds/PeleC-Domain-Expansion-Fork/cmake-build-debug

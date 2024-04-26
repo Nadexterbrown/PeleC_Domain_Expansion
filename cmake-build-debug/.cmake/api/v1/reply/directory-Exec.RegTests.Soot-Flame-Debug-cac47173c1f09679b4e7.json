@@ -1,0 +1,65 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"build_pele_exe",
+			"include"
+		],
+		"files" : 
+		[
+			"CMake/BuildPeleExe.cmake",
+			"CMake/BuildExeAndLib.cmake",
+			"Exec/RegTests/Soot-Flame/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 134,
+				"parent" : 3
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"Exec/RegTests/Soot-Flame/PeleC-Soot-Flame"
+			],
+			"targetId" : "PeleC-Soot-Flame::@72584034582c8646978f",
+			"targetIndex" : 19,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Exec/RegTests/Soot-Flame",
+		"source" : "Exec/RegTests/Soot-Flame"
+	}
+}

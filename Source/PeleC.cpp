@@ -704,17 +704,7 @@ PeleC::initData()
   amrex::MultiFab& S_new = get_new_data(State_Type);
 
   S_new.setVal(0.0);
-  /*
-  std::vector<amrex::Box> sim_boxes;
-  for (amrex::MFIter mfi_sim(S_new); mfi_sim.isValid(); ++mfi_sim) {
-    sim_boxes.push_back(mfi_sim.validbox());
-  }
 
-  // Step 2: Comparison & Categorization
-  for (const amrex::Box& sim_box : sim_boxes) {
-    amrex::Print() << "Simulation Box: " << sim_box << std::endl;
-  }
-  */
 #if AMREX_SPACEDIM > 1
   // make sure dx = dy = dz -- that's all we guarantee to support
   const amrex::GpuArray<amrex::Real, AMREX_SPACEDIM> dx = geom.CellSizeArray();
@@ -739,6 +729,7 @@ PeleC::initData()
   }
 
   if (init_pltfile.empty()) {
+    amrex::Print() << "Regular Code Initiation w/o PltFile" << std::endl;
     const auto geomdata = geom.data();
     const ProbParmDevice* lprobparm = d_prob_parm_device;
     auto sarrs = S_new.arrays();
